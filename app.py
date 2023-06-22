@@ -1,10 +1,10 @@
 from flask import Flask
-from src.modules.mongo import insert_item
+from src.sahara import scrape
 
 
 def create_app():
     app = Flask(__name__)
-
+    
     return app
 
 

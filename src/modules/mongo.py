@@ -12,10 +12,10 @@ except:
 
 
 def insert_item(data):
-    return mongodb.newsData.insert_one(data)
+    return mongodb.crimenews.insert_one(data)
 
 def fetch_all():
-    return mongodb.newsData.find()
+    return mongodb.crimenews.find()
 
 def update_item():
     pass
@@ -26,8 +26,3 @@ def delete_item():
 
 def find_item():
     pass
-
-
-d = fetch_all()
-
-print([n for n in d])

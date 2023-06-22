@@ -81,6 +81,8 @@ def scrape():
                                 Lga = lga
                                 State = state
                                 Crime = crime
+                                Source = "sahara"
+
                                 print(Date)
                                 try:
                                     print(Date, State, Lga, Crime, "\n\n")
@@ -92,11 +94,12 @@ def scrape():
                                   
 
                                     # print(location)
-                                    insert_item({"state": State, "lga": Lga, "crime": Crime, "date": newdate, "geoCode": {
-                                       "formattedAddress":str(loc["formattedAddress"]),
-                                       "lng":loc["lng"],
-                                       "lat":loc["lat"]
-                                    }})
+                                    insert_item({"state": State, "lga": Lga, "crime": Crime, "date": newdate, "source":Source, 
+                                                 "geoCode": {
+                                                    "formattedAddress":str(loc["formattedAddress"]),
+                                                    "lng":loc["lng"],
+                                                    "lat":loc["lat"]
+                                                }})
 
                                 except Exception as e:
                                     print(e)
