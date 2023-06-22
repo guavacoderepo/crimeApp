@@ -4,6 +4,7 @@ import utils.variables as var
 from modules.mongo import insert_item
 from utils.geocode import geoCoder
 from datetime import datetime
+from utils.categories import categorize
 
 states = [state for state in var.states.keys()]
 crime = var.crimesList
@@ -89,12 +90,14 @@ def scrape():
                                     
                                     loc = geoCoder(loc="{} {}, {}".format(Lga, State, "nigeria"))
                                     
+                                    # format date 
                                     newdate = dateformat.strptime(Date, '%B-%d-%Y')
 
-                                  
+                                    # get crime category 
+                                    category = categorize(Crime)
 
-                                    # print(location)
-                                    insert_item({"state": State, "lga": Lga, "crime": Crime, "date": newdate, "source":Source, 
+                                    # insert into mongo 
+                                    insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source, 
                                                  "geoCode": {
                                                     "formattedAddress":str(loc["formattedAddress"]),
                                                     "lng":loc["lng"],
@@ -112,3 +115,5 @@ def scrape():
 
 
 scrape()
+
+

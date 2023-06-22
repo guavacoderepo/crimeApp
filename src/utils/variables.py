@@ -1,8 +1,8 @@
-crimesList = ["bandit", "terrorist", "kidnap", "herdsmen", "Atm", "rape", "raping", "Terrorism", "Explosive", "slavery",
-              "murder", "traffic", "Cybercrime", "internet", "Fraud", "Money", "Ritual", "Brutality", "Trial",
-              "Bribery", "Corruption", "financial", "Robbery", "Religious", "Conspiracy", "Slander", "Embezzlement",
-              "Ballot Box", "Forgery", "Assault", "Malpractice", "attack", "EFCC", "Abduct", "killing", "uber", "burn",
-              "ipob", "stab", "ritual", "death", "war", "drug", "abduction", "steal", "Crime", "Police"
+crimesList = ["bandit", "terrorist", "kidnap", "herdsmen", "boko haram", "explosion", "atm", "rape", "separatist", "raping", "terrorism", "explosive", "slavery",
+              "murder", "traffic", "Cybercrime", "internet", "fraud", "Money", "Brutality", "Trial", "scam", "wire fraud", "financial", "impersonation", "laundering",
+              "Bribery", "Corruption", "financial", "robbery", "religious", "Conspiracy", "Slander", "armed", "theft", "burglary","cult","human trafficking",
+              "ballot box", "forgery", "assault", "Malpractice", "attack", "efcc", "abduct", "killing", "uber", "burn", "electoral violence", 
+              "ipob", "agitation", "stab", "ritual", "death", "baby factories", "war", "smuggling", "drug", "kidnapping", "drug trafficking", "abduction", "steal", "crime", "communal clash", "police"
               ]
 
 states = {
