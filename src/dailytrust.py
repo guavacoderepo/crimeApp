@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-import utils.variables as var
+import src.utils.variables as var
 from datetime import datetime
-from utils.requestfunc import requetfunc
+from src.utils.requestfunc import requetfunc
 
 
 states = [state for state in var.states.keys()]

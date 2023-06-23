@@ -1,6 +1,6 @@
-from modules.mongo import insert_item
-from utils.geocode import geoCoder
-from utils.categories import categorize
+from src.modules.mongo import insert_item
+from src.utils.geocode import geoCoder
+from src.utils.categories import categorize
 from datetime import datetime
 
 dateformat = datetime

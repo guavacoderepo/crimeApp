@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import utils.variables as var
-from utils.requestfunc import requetfunc
+import src.utils.variables as var
+from src.utils.requestfunc import requetfunc
 from datetime import datetime
 
 
@@ -47,14 +47,11 @@ def guardian_scrape_one_page():
             headlines = str(healine.text.lower()).replace(
                 "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
             
-            
-            
             if state.lower() in headlines:
     
                 crime = [crime for crime in var.crimesList if crime.lower()
                             in healine.text.lower()]
-                
-                
+                    
                 if crime:
                     content = ""
 
@@ -62,7 +59,6 @@ def guardian_scrape_one_page():
                         link = healine.get("href")
                     except Exception as e:
                         print(e)
-
 
                     news_req = requests.get(
                         str(link).strip(), timeout=10).text
@@ -96,8 +92,8 @@ def guardian_scrape_one_page():
                             break
 
 
-
     print("--------------- {} ended -------------".format(page))
+
 
 
 
@@ -145,7 +141,6 @@ def guardian_scrape_all_document():
                     crime = [crime for crime in var.crimesList if crime.lower()
                              in healine.text.lower()]
                     
-                    
                     if crime:
                         content = ""
 
@@ -153,7 +148,6 @@ def guardian_scrape_all_document():
                             link = healine.get("href")
                         except Exception as e:
                             print(e)
-
 
                         news_req = requests.get(
                             str(link).strip(), timeout=10).text

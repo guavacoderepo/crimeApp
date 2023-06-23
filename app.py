@@ -1,9 +1,19 @@
 from flask import Flask
-from src.sahara import scrape
+from src import scrape_all, scrape_one
 
 
 def create_app():
     app = Flask(__name__)
+
+    @app.route('/api/v1/scrap/all')
+    def scrap_all_pages():
+        scrape_all()
+        return {"status": True, "msg": "scrapping all pages"}
+
+    @app.route('/api/v1/scrap/one')
+    def scrap_one_page():
+        scrape_one()
+        return {"status": True, "msg": "scrapping one page"}
     
     return app
 
