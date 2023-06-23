@@ -1,8 +1,8 @@
 crimesList = ["bandit", "terrorist", "kidnap", "herdsmen", "boko haram", "explosion", "atm", "rape", "separatist", "raping", "terrorism", "explosive", "slavery",
-              "murder", "traffic", "Cybercrime", "internet", "fraud", "Money", "Brutality", "Trial", "scam", "wire fraud", "financial", "impersonation", "laundering",
+              "murder", "traffic", "Cybercrime", "internet", "sex", "fraud", "Money", "Brutality", "Trial", "scam", "wire fraud", "financial", "impersonation", "laundering",
               "Bribery", "Corruption", "financial", "robbery", "religious", "Conspiracy", "Slander", "armed", "theft", "burglary","cult","human trafficking",
-              "ballot box", "forgery", "assault", "Malpractice", "attack", "efcc", "abduct", "killing", "uber", "burn", "electoral violence", 
-              "ipob", "agitation", "stab", "ritual", "death", "baby factories", "war", "smuggling", "drug", "kidnapping", "drug trafficking", "abduction", "steal", "crime", "communal clash", "police"
+              "ballot box", "forgery", "assault", "Malpractice", "attack", "efcc", "abduct", "killing", "uber", "burn","ndlea", "electoral violence", 
+              "ipob", "agitation", "stab", "ritual", "death", "baby factories", "yahoo boy", "war", "smuggling", "drug", "kidnapping", "drug trafficking", "abduction", "steal", "crime", "communal clash", "police"
               ]
 
 states = {

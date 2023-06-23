@@ -16,31 +16,29 @@ dateformat = datetime
 
 
 
-
-# scrap one page 
+# scrap first page
 def scrape_one_page():
     page = 1
 
+
     print("--------------- {} started -------------".format(page))
 
-    saharareporters_request = requests.get(
-        "https://saharareporters.com/crime?page={}".format(page), timeout=10).text
+    guardian_request = requests.get("https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
+    
+    guardian_request_soup = BeautifulSoup(
+        guardian_request, "lxml")
 
-    saharareporters_request_soup = BeautifulSoup(
-        saharareporters_request, "lxml")
-
-    newsData = saharareporters_request_soup.find_all(
-        'h2', class_="title is-3")
-
-    dates = saharareporters_request_soup.find_all(
-        'div', class_="card-content-bottom")
+    newsData = guardian_request_soup.find_all(
+        'div', class_="headline")
 
     # search for state in the headlind of each new
+    headlins = [head.a for head in newsData]
 
+
+    # print(len(headlins))
     for state in states:
-        headlins = [headline for headline in newsData]
 
-        for id, healine in enumerate(headlins):
+        for healine in headlins:
 
             State = ""
             Lga = ""
@@ -49,51 +47,56 @@ def scrape_one_page():
 
             headlines = str(healine.text.lower()).replace(
                 "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
-
-            # print(headlines)
+            
+            
+            
             if state.lower() in headlines:
-
+    
                 crime = [crime for crime in var.crimesList if crime.lower()
                             in healine.text.lower()]
-
+                
+                
                 if crime:
                     content = ""
 
                     try:
-                        link = healine.find_all("a")
+                        link = healine.get("href")
                     except Exception as e:
                         print(e)
 
-                    news_req = requests.get(
-                        "https://saharareporters.com"+link[0].get('href'), timeout=10).text
 
+                    news_req = requests.get(
+                        str(link).strip(), timeout=10).text
+                    
                     soup_req = BeautifulSoup(news_req, "lxml")
 
-                    text = [req.text for req in soup_req.find_all(
-                        "div", property="schema:text")]
+                    date = soup_req.find_all("div", class_="date")[0].text
 
+                    text = [req.text for req in soup_req.find_all("p")]
+                    
                     content = content.join(e.lower() for e in text)
 
                     for lga in var.states[state]:
 
                         if lga.lower() in content:
 
-                            Date = str(dates[id].find_all("div")[
-                                0].text).replace(",", "").strip().replace(" ", "-")
+                            d = str(date).strip().split(" ")
+
+                            Date = "{}-{}-{}".format(d[0],d[1],d[2])
 
                             Lga = lga
                             State = state
                             Crime = crime
-                            Source = "sahara"
+                            Source = "guardian"
 
-                            print(Date)
                             try:
                                 print(Date, State, Lga, Crime, "\n\n")
                                 
                                 loc = geoCoder(loc="{} {}, {}".format(Lga, State, "nigeria"))
                                 
-                                # format date 
-                                newdate = dateformat.strptime(Date, '%B-%d-%Y')
+                                newdate = dateformat.strptime(Date, '%d-%B-%Y')
+
+                                # print(newdate)
 
                                 # get crime category 
                                 category = categorize(Crime)
@@ -111,43 +114,42 @@ def scrape_one_page():
 
                             break
 
+
+
     print("--------------- {} ended -------------".format(page))
 
 
 
 
-
-
-# scrap all documents
-def scrape_all_documents():
+# scrap all pages 
+def scrape_all_document():
     page = 1
 
     while True:
 
         print("--------------- {} started -------------".format(page))
 
-        saharareporters_request = requests.get(
-            "https://saharareporters.com/crime?page={}".format(page), timeout=10).text
-
-        saharareporters_request_soup = BeautifulSoup(
-            saharareporters_request, "lxml")
-
-        newsData = saharareporters_request_soup.find_all(
-            'h2', class_="title is-3")
-
-        dates = saharareporters_request_soup.find_all(
-            'div', class_="card-content-bottom")
+        guardian_request = requests.get("https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
         
-         # check if news found
+        guardian_request_soup = BeautifulSoup(
+            guardian_request, "lxml")
+
+        newsData = guardian_request_soup.find_all(
+            'div', class_="headline")
+        
+        # check if news found
         if len(newsData) == 0:
             break
+            
 
         # search for state in the headlind of each new
+        headlins = [head.a for head in newsData]
 
+        
+        # print(len(headlins))
         for state in states:
-            headlins = [headline for headline in newsData]
 
-            for id, healine in enumerate(headlins):
+            for healine in headlins:
 
                 State = ""
                 Lga = ""
@@ -156,54 +158,60 @@ def scrape_all_documents():
 
                 headlines = str(healine.text.lower()).replace(
                     "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
-
-                # print(headlines)
+                
+                
                 if state.lower() in headlines:
-
+       
                     crime = [crime for crime in var.crimesList if crime.lower()
                              in healine.text.lower()]
-
+                    
+                    
                     if crime:
                         content = ""
 
                         try:
-                            link = healine.find_all("a")
+                            link = healine.get("href")
                         except Exception as e:
                             print(e)
 
-                        news_req = requests.get(
-                            "https://saharareporters.com"+link[0].get('href'), timeout=10).text
 
+                        news_req = requests.get(
+                            str(link).strip(), timeout=10).text
+                        
                         soup_req = BeautifulSoup(news_req, "lxml")
 
-                        text = [req.text for req in soup_req.find_all(
-                            "div", property="schema:text")]
+                        date = soup_req.find_all("div", class_="date")[0].text
 
+                        text = [req.text for req in soup_req.find_all("p")]
+                        
                         content = content.join(e.lower() for e in text)
 
                         for lga in var.states[state]:
 
                             if lga.lower() in content:
 
-                                Date = str(dates[id].find_all("div")[
-                                    0].text).replace(",", "").strip().replace(" ", "-")
+                                d = str(date).strip().split(" ")
+
+                                Date = "{}-{}-{}".format(d[0],d[1],d[2])
 
                                 Lga = lga
                                 State = state
                                 Crime = crime
-                                Source = "sahara"
+                                Source = "guardian"
 
-                                print(Date)
                                 try:
                                     print(Date, State, Lga, Crime, "\n\n")
                                     
                                     loc = geoCoder(loc="{} {}, {}".format(Lga, State, "nigeria"))
                                     
-                                    # format date 
-                                    newdate = dateformat.strptime(Date, '%B-%d-%Y')
+                                    newdate = dateformat.strptime(Date, '%d-%B-%Y')
+
+                                    # print(newdate)
 
                                     # get crime category 
                                     category = categorize(Crime)
+
+                                    print(category)
 
                                     # insert into mongo 
                                     insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source, 
@@ -219,5 +227,6 @@ def scrape_all_documents():
                                 break
 
 
+
         print("--------------- {} ended -------------".format(page))
-        page+=1
+        page += 1
