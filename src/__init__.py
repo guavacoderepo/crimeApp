@@ -1,32 +1,47 @@
-# importing the multiprocessing module
 import multiprocessing
-from time import sleep
+from src.sahara import sahara_scrape_all_documents, sahara_scrape_one_page
+from src.dailytrust import dailytrust_scrape_all_docx, dailytrust_scrape_one_page
+from src.guardian import guardian_scrape_all_document, guardian_scrape_one_page
 
-def print2():
-	for i in range(30,1000):
-		print(i)
-		sleep(1)
-	
 
-def print1():
-	for i in range(5000,10000):
-		print(i)
-		sleep(0.5)
 
-if __name__ == "__main__":
+def scrape_all():
 	# creating processes
-	p1 = multiprocessing.Process(target=print1)
-	p2 = multiprocessing.Process(target=print2)
+	p1 = multiprocessing.Process(target=sahara_scrape_all_documents)
+	p2 = multiprocessing.Process(target=dailytrust_scrape_all_docx)
+	p3 = multiprocessing.Process(target=guardian_scrape_all_document)
 
 	# starting process 1
 	p1.start()
 	# starting process 2
 	p2.start()
+	
+    # starting process 3
+	p3.start()
 
 	# wait until process 1 is finished
 	p1.join()
 	# wait until process 2 is finished
 	p2.join()
+	p3.join()
+	
 
-	# both processes finished
-	print("Done!")
+def scrape_one():
+	# creating processes
+	p1 = multiprocessing.Process(target=sahara_scrape_one_page)
+	p2 = multiprocessing.Process(target=dailytrust_scrape_one_page)
+	p3 = multiprocessing.Process(target=guardian_scrape_one_page)
+
+	# starting process 1
+	p1.start()
+	# starting process 2
+	p2.start()
+	
+    # starting process 3
+	p3.start()
+
+	# wait until process 1 is finished
+	p1.join()
+	# wait until process 2 is finished
+	p2.join()
+	p3.join()

@@ -15,3 +15,4 @@ def categorize(crime):
         if (v.intersection(set(crime))): 
             print(crime)
             return k
+        

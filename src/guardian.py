@@ -1,10 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import utils.variables as var
-from modules.mongo import insert_item
-from utils.geocode import geoCoder
+from utils.requestfunc import requetfunc
 from datetime import datetime
-from utils.categories import categorize
+
 
 states = [state for state in var.states.keys()]
 crime = var.crimesList
@@ -17,7 +16,7 @@ dateformat = datetime
 
 
 # scrap first page
-def scrape_one_page():
+def guardian_scrape_one_page():
     page = 1
 
 
@@ -89,28 +88,10 @@ def scrape_one_page():
                             Crime = crime
                             Source = "guardian"
 
-                            try:
-                                print(Date, State, Lga, Crime, "\n\n")
-                                
-                                loc = geoCoder(loc="{} {}, {}".format(Lga, State, "nigeria"))
-                                
-                                newdate = dateformat.strptime(Date, '%d-%B-%Y')
+                            newdate = dateformat.strptime(Date, '%d-%B-%Y')
 
-                                # print(newdate)
-
-                                # get crime category 
-                                category = categorize(Crime)
-
-                                # insert into mongo 
-                                insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source, 
-                                                "geoCode": {
-                                                "formattedAddress":str(loc["formattedAddress"]),
-                                                "lng":loc["lng"],
-                                                "lat":loc["lat"]
-                                            }})
-
-                            except Exception as e:
-                                print(e)
+                            # send date to database
+                            requetfunc(newdate, State, Lga, Crime, Source)
 
                             break
 
@@ -122,7 +103,7 @@ def scrape_one_page():
 
 
 # scrap all pages 
-def scrape_all_document():
+def guardian_scrape_all_document():
     page = 1
 
     while True:
@@ -141,7 +122,6 @@ def scrape_all_document():
         if len(newsData) == 0:
             break
             
-
         # search for state in the headlind of each new
         headlins = [head.a for head in newsData]
 
@@ -199,31 +179,11 @@ def scrape_all_document():
                                 Crime = crime
                                 Source = "guardian"
 
-                                try:
-                                    print(Date, State, Lga, Crime, "\n\n")
-                                    
-                                    loc = geoCoder(loc="{} {}, {}".format(Lga, State, "nigeria"))
-                                    
-                                    newdate = dateformat.strptime(Date, '%d-%B-%Y')
+                                newdate = dateformat.strptime(Date, '%d-%B-%Y')
 
-                                    # print(newdate)
-
-                                    # get crime category 
-                                    category = categorize(Crime)
-
-                                    print(category)
-
-                                    # insert into mongo 
-                                    insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source, 
-                                                 "geoCode": {
-                                                    "formattedAddress":str(loc["formattedAddress"]),
-                                                    "lng":loc["lng"],
-                                                    "lat":loc["lat"]
-                                                }})
-
-                                except Exception as e:
-                                    print(e)
-
+                                # send date to database
+                                requetfunc(newdate, State, Lga, Crime, Source)
+                                
                                 break
 
 
