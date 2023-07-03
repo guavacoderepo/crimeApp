@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
-mongourl = "mongodb+srv://guava:guava@cluster0.ukn1jcw.mongodb.net/?retryWrites=true&w=majority"
 
+mongourl = "mongodb+srv://crimeapp:crimeapp@crimeapp.r6hqoud.mongodb.net/?retryWrites=true&w=majority"
 
 try:
     mongodb = MongoClient(mongourl).crimeApp
@@ -9,6 +9,7 @@ try:
 except:
     print("Connection error...")
     pass
+
 
 
 def insert_item(data):
