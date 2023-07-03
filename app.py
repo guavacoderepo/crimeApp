@@ -1,10 +1,11 @@
 from flask import Flask
+from flask_cors import CORS
 from src import scrape_all, scrape_one
 
 
 def create_app():
     app = Flask(__name__)
-
+    CORS(app)
     @app.route('/api/v1/scrap/all')
     def scrap_all_pages():
         scrape_all()
