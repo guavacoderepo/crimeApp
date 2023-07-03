@@ -10,7 +10,7 @@ def create_app():
         scrape_all()
         return {"status": True, "msg": "scrapping all pages"}
 
-    @app.route('/api/v1/scrap/one')
+    @app.route('/api/v1/scrap/single')
     def scrap_one_page():
         scrape_one()
         return {"status": True, "msg": "scrapping one page"}
