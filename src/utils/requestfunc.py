@@ -4,6 +4,9 @@ from src.modules.mongo import insert_item
 from src.utils.geocode import geoCoder
 from src.utils.categories import categorize
 from datetime import datetime
+import pandas as pd
+
+
 
 dateformat = datetime
 
@@ -17,6 +20,28 @@ def requetfunc(newdate, State, Lga, Crime, Source):
         # get crime category 
         category = categorize(Crime)
 
+        # create a csv
+        data = {
+            "state": [State], 
+            "lga": [Lga], 
+            "crime": [category], 
+            "date": [newdate], 
+            "source": [Source],               
+            "formattedAddress": [str(loc["formattedAddress"])],
+            "lng": [loc["lng"]],
+            "lat": [loc["lat"]]
+        }
+            
+        # Make data frame of above data
+        df = pd.DataFrame(data)
+
+        # append data frame to CSV file
+        df.to_csv('data.csv', mode='a', index=False, header=False)
+            
+        # print message
+        print("Data appended successfully.")
+
+
         # insert into mongo 
         insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source, 
                         "geoCode": {
@@ -27,3 +52,4 @@ def requetfunc(newdate, State, Lga, Crime, Source):
 
     except Exception as e:
         print(e)
+
