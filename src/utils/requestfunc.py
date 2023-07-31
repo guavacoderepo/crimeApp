@@ -1,10 +1,10 @@
 # add scr. on all utils
 
-from src.modules.mongo import insert_item
-from src.utils.geocode import geoCoder
-from src.utils.categories import categorize
+from modules.mongo import insert_item
+from utils.geocode import geoCoder
+from utils.categories import categorize
 from datetime import datetime
-import pandas as pd
+# import pandas as pd
 
 
 
@@ -20,24 +20,30 @@ def requetfunc(newdate, State, Lga, Crime, Source):
         # get crime category 
         category = categorize(Crime)
 
+
+################################################# Start CSV ##################################################
+
         # create a csv
-        data = {
-            "state": [State], 
-            "lga": [Lga], 
-            "crime": [category], 
-            "date": [newdate], 
-            "source": [Source],               
-            "formattedAddress": [str(loc["formattedAddress"])],
-            "lng": [loc["lng"]],
-            "lat": [loc["lat"]]
-        }
+        # data = {
+        #     "state": [State], 
+        #     "lga": [Lga], 
+        #     "crime": [category], 
+        #     "date": [newdate], 
+        #     "source": [Source],               
+        #     "formattedAddress": [str(loc["formattedAddress"])],
+        #     "lng": [loc["lng"]],
+        #     "lat": [loc["lat"]]
+        # }
             
         # Make data frame of above data
-        df = pd.DataFrame(data)
+
+        # df = pd.DataFrame(data)
 
         # append data frame to CSV file
-        df.to_csv('data.csv', mode='a', index=False, header=False)
-            
+
+        # df.to_csv('data.csv', mode='a', index=False, header=False)
+
+############################################ End CSV #######################################################
         # print message
         print("Data appended successfully.")
 
