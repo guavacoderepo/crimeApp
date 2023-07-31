@@ -8,10 +8,10 @@ def geoCoder(loc="Adamawa Adamawa"):
 
     lat = location.latitude
     lng = location.longitude
-    addr =  location
+    addr = location
 
     if location != None:
-        return {"formattedAddress":addr, "lat":lat, "lng":lng}
+        return {"formattedAddress": addr, "lat": lat, "lng": lng}
     else:
-        return {"formattedAddress":loc, "lat":"", "lng":""}
+        return {"formattedAddress": loc, "lat": "", "lng": ""}
 # geoCoder()

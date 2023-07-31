@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import utils.variables as var
-# from utils.requestfunc import requetfunc
+from utils.requestfunc import requetfunc
 from datetime import datetime
 
 
@@ -101,7 +101,7 @@ url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
 # scrap all pages
 def nigeriawatch_scrape_all_document():
-    page = 0
+    page = 1
 
     while True:
 
@@ -111,7 +111,8 @@ def nigeriawatch_scrape_all_document():
         # if len(newsData) == 0:
         #     break
 
-        nigeriawatchReq = requests.get("{}{}".format(url, 3), timeout=10).text
+        nigeriawatchReq = requests.get(
+            "{}{}".format(url, page), timeout=10).text
 
         nigeriawatch_request_soup = BeautifulSoup(
             nigeriawatchReq, "lxml")
@@ -138,79 +139,20 @@ def nigeriawatch_scrape_all_document():
 
             Source = headlines[-2].strip()
 
-            place = "{}, {} {}".format(headlines[6], Lga, State)
+            place = "{}, {}".format(headlines[6], Lga)
 
             d = str(date).strip().split("-")
 
             Date = "{}-{}-{}".format(d[2], d[1], d[0])
 
-            print(Date)
+            newdate = dateformat.strptime(Date, '%d-%m-%Y')
 
-            newdate = dateformat.strptime(Date, '%d-%B-%Y')
-
-            print(newdate)
+            # send date to database
+            requetfunc(newdate, State, Lga, Crime, Source)
 
             pass
         else:
             print("no news data")
-
-        # print(len(headlins))
-
-        # for state in states:
-
-            # for healine in headlins:
-
-            #     State = ""
-            #     Lga = ""
-            #     Crime = ""
-            #     Date = ""
-
-            #     headlines = str(healine.text.lower()).replace(
-            #         "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
-
-            #     if state.lower() in headlines:
-
-            #         crime = [crime for crime in var.crimesList if crime.lower()
-            #                  in healine.text.lower()]
-
-            #         if crime:
-            #             content = ""
-
-            #             try:
-            #                 link = healine.get("href")
-            #             except Exception as e:
-            #                 print(e)
-
-            #             news_req = requests.get(
-            #                 str(link).strip(), timeout=10).text
-
-            #             soup_req = BeautifulSoup(news_req, "lxml")
-
-            #             date = soup_req.find_all("div", class_="date")[0].text
-
-            #             text = [req.text for req in soup_req.find_all("p")]
-
-            #             content = content.join(e.lower() for e in text)
-
-            #             for lga in var.states[state]:
-
-            #                 if lga.lower() in content:
-
-            #                     d = str(date).strip().split(" ")
-
-            #                     Date = "{}-{}-{}".format(d[0],d[1],d[2])
-
-            #                     Lga = lga
-            #                     State = state
-            #                     Crime = crime
-            #                     Source = "guardian"
-
-            #                     newdate = dateformat.strptime(Date, '%d-%B-%Y')
-
-            #                     # send date to database
-            #                     requetfunc(newdate, State, Lga, Crime, Source)
-
-            #                     break
 
         print("--------------- {} ended -------------".format(page))
         page += 1
