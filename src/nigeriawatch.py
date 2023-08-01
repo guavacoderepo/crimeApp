@@ -18,96 +18,98 @@ dateformat = datetime
 url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
 
-# scrap first page
-# def nigeriawatch_one_page():
-#     page = 1
+# scrap new pages
+def nigeriawatch_scrape_new_document():
+    page = 1473
+    # start iteration
+    while True:
 
+        print("--------------- {} started -------------".format(page))
 
-#     print("--------------- {} started -------------".format(page))
+        # check if news exceed a value
+        # if len(newsData) == 0:
+        #     break
 
-#     nigeriawatchReq = requests.get("{}{}".format(url,3), timeout=10).text
+        nigeriawatchReq = requests.get(
+            "{}{}".format(url, page), timeout=10).text
 
-#     nigeriawatch_request_soup = BeautifulSoup(
-#         nigeriawatchReq, "lxml")
+        nigeriawatch_request_soup = BeautifulSoup(
+            nigeriawatchReq, "lxml")
 
-#     newsData = nigeriawatch_request_soup.find_all(
-#         'td', class_="val_champs_form")
+        newsData = nigeriawatch_request_soup.find_all(
+            'td', class_="val_champs_form")
 
-#     # search for state in the headlind of each new
-#     headlines = [head.text for head in newsData]
+        # search for state in the headlind of each new
+        headlines = [head.text for head in newsData]
 
-#     print(headlines)
+        # print(headlines)
 
+        # check if news is valid
+        if len(headlines) > 3:
 
-#     # print(len(headlins))
-#     for state in states:
+            # check the state
+            title = headlines[1].lower().replace(
+                "(", "").replace(")", "").replace(",", "")
 
-#         for healine in headlins:
+            print(title)
 
-#             State = ""
-#             Lga = ""
-#             Crime = ""
-#             Date = ""
+            # check if state exit
+            State = [state for state in states if state.lower() in title]
 
-#             headlines = str(healine.text.lower()).replace(
-#                 "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
+            # if state is empty look out for lga in title
+            if not State:
+                # get all lgas for filter
+                for k, v in var.states.items():
+                    lgaValue = [lga for lga in v if lga.lower() in title]
+                    if lgaValue:
+                        # set state to index 0 of state list
+                        State = [k]
+                        break
 
-#             if state.lower() in headlines:
+            # check if state found
+            if not State:
+                print("no state found.....")
+                page += 1
+                continue
 
-#                 crime = [crime for crime in var.crimesList if crime.lower()
-#                             in healine.text.lower()]
+            # extract lga, crime, date and source
+            Lga = headlines[-1]
 
-#                 if crime:
-#                     content = ""
+            crime = [crime for crime in var.crimesList if crime.lower()
+                     in title]
 
-#                     try:
-#                         link = healine.get("href")
-#                     except Exception as e:
-#                         print(e)
+            # check if crime exit
+            if not crime:
+                page += 1
+                print("no crime found.........")
+                continue
 
-#                     news_req = requests.get(
-#                         str(link).strip(), timeout=10).text
+            date = headlines[3]
 
-#                     soup_req = BeautifulSoup(news_req, "lxml")
+            Source = "".join(headlines[-2].split())
 
-#                     date = soup_req.find_all("div", class_="date")[0].text
+            # place = "{}, {}".format(headlines[6], Lga)
 
-#                     text = [req.text for req in soup_req.find_all("p")]
+            d = str(date).strip().split("-")
 
-#                     content = content.join(e.lower() for e in text)
+            Date = "{}-{}-{}".format(d[2], d[1], d[0])
 
-#                     for lga in var.states[state]:
+            newdate = dateformat.strptime(Date, '%d-%m-%Y')
 
-#                         if lga.lower() in content:
+            # send date to database
+            requetfunc(newdate, State[0], Lga, crime, Source)
 
-#                             d = str(date).strip().split(" ")
+            pass
+        else:
+            print("no news data")
 
-#                             Date = "{}-{}-{}".format(d[0],d[1],d[2])
-
-#                             Lga = lga
-#                             State = state
-#                             Crime = crime
-#                             Source = "guardian"
-
-#                             newdate = dateformat.strptime(Date, '%d-%B-%Y')
-
-#                             # send date to database
-#                             requetfunc(newdate, State, Lga, Crime, Source)
-
-#                             break
-
-
-#     print("--------------- {} ended -------------".format(page))
+        print("--------------- {} ended -------------".format(page))
+        page += 1
 
 
 # scrap all pages
 def nigeriawatch_scrape_all_document():
     page = 1473
-    all_lgas = []
-
-    # 1956
-
-    # print(all_lgas)
 
     # start iteration
     while True:
@@ -174,9 +176,9 @@ def nigeriawatch_scrape_all_document():
 
             date = headlines[3]
 
-            Source = headlines[-2]
+            Source = "".join(headlines[-2].split())
 
-            place = "{}, {}".format(headlines[6], Lga)
+            # place = "{}, {}".format(headlines[6], Lga)
 
             d = str(date).strip().split("-")
 
@@ -185,7 +187,7 @@ def nigeriawatch_scrape_all_document():
             newdate = dateformat.strptime(Date, '%d-%m-%Y')
 
             # send date to database
-            # requetfunc(newdate, State[0], Lga, Crime, Source)
+            requetfunc(newdate, State[0], Lga, crime, Source)
 
             pass
         else:
