@@ -3,9 +3,9 @@ categories = {
     "Fraud": {"cybercrime", "atm" "fraud", "internet", "forgery", "scam", "wire fraud", "financial", "yahoo boy", "impersonation", "laundering", "Money", "efcc", "forgery"},
     "Robbery": {"highway robbery", "robbery", "robbers", "bullets", "rob",  "robber",   "armed", "theft", "burglary", "steal", "thieves"},
 
-    "Violence": {"electoral violence", "explosive", "religious", "assault", "ballot box", "cult", "communal clash", "brutality", "war",
+    "Violence": {"electoral violence", "violence", "fight", "explosive", "religious", "assault", "ballot box", "cult", "communal clash", "clash", "brutality", "war",
                  "ethno-religious", "child labor", "hoodlums", "cultist", "vigilante", "kill", "decomposed corpse", "police", "victim", "security agency", "security operative",
-                 "soldiers", "gang", "war", "domestic violence", "found dead", "assailants", "crisis", "mob", "raze", "ablaze", "political violence", "task force", "NSCDC", "mosque", "church",
+                 "soldiers", "gang", "war", "domestic violence","pdp", "found dead", "assailants", "crisis", "mob", "raze", "ablaze", "political violence", "task force", "NSCDC", "mosque", "church",
                  "Oro", "Ifa", "traditional", "worshipper", "convoy", "students", "ritual", "NURTW", "murder", "SARS", "tussle", "lynch", "guards", "jungle" "justice", "Shiites", "pipeline", "vandal", "masquerade", "human skull",
                  "body parts", "checkpoint", "protest", "assassination", "burn", "execute"
                  },

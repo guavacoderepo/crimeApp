@@ -196,4 +196,1383 @@ Osun,Ila,Robbery,2022-09-07,guardian,"Ila, Ilesha West, Osun, Nigeria",4.666667,
 Plateau,Jos South,Abduction,2022-09-08,guardian,"Jos South, Plateau, 930101, Nigeria",8.848780461155847,9.7587528
 Osun,Osun,Robbery,2022-09-06,guardian,"Oṣun, Osun, Nigeria",4.1050626,7.2364371
 Sokoto,Goronyo,Terrorism,2022-09-05,guardian,"Goronyo, Sokoto, Nigeria",5.6738295,13.4400866
-Ogun,Ogun,Drug trafficking,2022-09-02,guardian,"Ogun, Nigeria",3.5004784,7.3894478
+Ogun,Ogun,Drug trafficking,2022-09-02,guardian,"Ogun, Nigeria",3.5004784,7.3894478Ekiti,Ado-Ekiti,Violence,2006-06-08,"New Nigerian
+							(6 )
+						, Daily Champion
+							(1 )
+						, The Punch
+							(3 )
+						, Other source (private security firms, etc)
+							(2 )","Adó-Èkìtì, Ekiti, Nigeria",5.22274,7.6232482
+Lagos,Epe,Robbery,2006-06-15,"The Punch
+							(1 )","Epe, Lagos, Nigeria",3.9753453,6.5858219
+Lagos,Ikorodu,Terrorism,2006-06-18,"Vanguard
+							(2 )
+						, Daily Champion
+							(2 )","Ìkòròdú, Lagos, Nigeria",3.5041271,6.6191233
+Anambra,"Onitsha North, Onitsha South",Violence,2006-06-15,"Daily Champion
+							(2800 )
+						, The Week
+							(760 )
+						, Tell
+							(46 )
+						, Independent
+							(31 )
+						, police
+							(76 )
+						, Vanguard
+							(19 )
+						, The Punch
+							(40 )
+						, The Guardian
+							(767 )
+						, The Nation
+							(760 )","Onitsha - Owerri Road, Onitsha, Onitsha North, Anambra, 430231, Nigeria",6.7932442,6.1103202
+Lagos,Agege,Others crimes,2006-06-15,"hospital
+							(1 )
+						, The Punch
+							(1 )","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+Delta,Oshimili South,Terrorism,2006-06-13,"The Guardian
+							(1 )
+						, Vanguard
+							(1 )","Oshimili South, Delta, Nigeria",6.730733427256107,6.1303620500000005
+Ondo,Owo,Terrorism,2006-06-10,"Daily Champion
+							(2 )","Ọ̀wọ̀, Ondo, Nigeria",5.5868016,7.1962012
+people,Onicha,Terrorism,2006-06-10,"The Guardian
+							(6 )","Onicha people, nigeria",,
+dead,Obokun,Violence,2006-06-17,"The Guardian
+							(2 )","Obokun dead, nigeria",,
+Osun,Ila,Violence,2006-06-10,"Daily Champion
+							(5 )","Ila, Ilesha West, Osun, Nigeria",4.666667,7.666667
+Anambra,"Onitsha North, Onitsha South",Violence,2006-06-17,"The Guardian
+							(1 )","Onitsha - Owerri Road, Onitsha, Onitsha North, Anambra, 430231, Nigeria",6.7932442,6.1103202
+police,Sapele,Terrorism,2006-06-17,"Vanguard
+							(1 )","Sapele police, nigeria",,
+dies,Sapele,Terrorism,2006-06-17,"Vanguard
+							(1 )","Sapele dies, nigeria",,
+Lagos,Alimosho,Terrorism,2006-06-12,"Vanguard
+							(1 )","Alimosho, Lagos, Nigeria",3.257631097232365,6.58434295
+Ekpan,Uvwie,Terrorism,2006-06-17,"Vanguard
+							(2 )","First Bank of Nigeria, Housing Complex Road, Warri, Uvwie, Delta, 330102, Nigeria",5.7439624,5.5645287
+Lagos,Oshodi-Isolo,Robbery,2006-06-11,"The Punch
+							(1 )","Oshodi/Isolo, Lagos, 100263, Nigeria",3.3124146026491035,6.5400100000000005
+Ogun,Ado-Odo/Ota,Terrorism,2006-06-09,"The Punch
+							(3 )","Ado Odo/Ota, Ogun, 100314, Nigeria",3.0823072642902645,6.62447595
+Port-Harcourt,Port-Harcourt,Terrorism,2006-06-20,"The Punch
+							(1 )","Olusegun Obasanjo Bypass, Port Harcourt, Dobu, Port-Harcourt, Rivers, 520052, Nigeria",6.9938498,4.8052579
+Lagos,Kosofe,Violence,2006-06-05,"Vanguard
+							(2 )","Kosofe, Lagos, Nigeria",3.4148359416178415,6.581974000000001
+killed,Numan,Robbery,2006-06-24,"Daily Champion
+							(5 )","Numan killed, nigeria",,
+hospital,Oredo,Robbery,2006-06-25,"Vanguard
+							(2 )","Azuwa Hospital, 2nd Itohan Street, Benin City, Oredo, Edo, 300241, Nigeria",5.610721737421493,6.35110405
+university,Oredo,Robbery,2006-06-25,"Vanguard
+							(1 )","University of Benin, Ovie-whisky Avenue, Benin City, Oredo, Edo, 300102, Nigeria",5.599827113484077,6.33441425
+Kogi,Anpka,Robbery,2006-06-25,"The Guardian
+							(1 )","Anpka Kogi, nigeria",,
+Delta,"Ughelli South, Ughelli North",Violence,2006-06-13,"The Punch
+							(1 )","Ughelli South, Ughelli North Delta, nigeria",,
+Ondo,Akure South,Robbery,2006-06-27,"The Guardian
+							(1 )","Akure South, Ondo, Nigeria",5.167872722667031,7.22438455
+greediness,"Imeko-Afon, Ipokia",Terrorism,2006-06-28,"PM News
+							(1 )","Imeko-Afon, Ipokia greediness, nigeria",,
+Kwara,"Ilorin East, Ilorin West, Ilorin-South",Robbery,2006-06-01,"PM News
+							(1 )","Ilorin East, Ilorin West, Ilorin-South Kwara, nigeria",,
+Katsina,Funtua,Terrorism,2006-06-05,"Vanguard
+							(1 )","Funtua, Katsina, Nigeria",7.307497,11.5232142
+Church,Agege,Terrorism,2006-06-19,"Vanguard
+							(1 )
+						, Other source (private security firms, etc)
+							(1 )
+						, The Guardian
+							(1 )","African Church Central Primary School, Agege, Oniwaya Road, Agege, Lagos, 100282, Nigeria",3.319502486289439,6.61552365
+Rivers,Akuku Toru,Terrorism,2006-07-01,"Vanguard
+							(3 )
+						, Comet
+							(3 )","Akuku Toru, Rivers, Nigeria",6.678670665142749,4.53362895
+Awka,"Awka North, Awka South",Others crimes,2006-07-01,"The Punch
+							(1 )","Cattle Market Awka, Old Enugu Road, Awka, Awka North, Anambra, Nigeria",7.1373114,6.2473481
+Delta,Oshimili North,Violence,2006-06-01,"Vanguard
+							(2 )","Oshimili North, Delta, Nigeria",6.64777291488069,6.30333
+Delta,Ndokwa West,Violence,2006-06-01,"Vanguard
+							(1 )","Ndokwa West, Delta, Nigeria",6.416355059643836,5.8260994
+Lekki,Epe,Robbery,2006-07-03,"Comet
+							(3 )","Lekki-Epe Expressway, Epe, Lagos, Nigeria",3.9507988,6.5854044
+leader,Port-Harcourt,Violence,2006-07-03,"Vanguard
+							(1 )
+						, Comet
+							(1 )","Port-Harcourt leader, nigeria",,
+,Apapa,Terrorism,2006-07-04,"Vanguard
+							(1 )
+						, This Day
+							(2 )
+						, Other source (private security firms, etc)
+							(2 )","Apapa, Lagos, Nigeria",3.3683731679424094,6.445187000000001
+Lagos,Lagos Island,Violence,2006-06-09,"Tell
+							(6 )","Lagos Island, Falomo, Eti Osa, Lagos, Nigeria",3.416466825830611,6.4536545499999995
+road,Lokoja,Violence,2006-07-05,"Vanguard
+							(5 )","Lokoja-Otukpo Road, Kpato, Bassa, Kogi, Nigeria",6.8026346,7.7339026
+sister,Shomolu,Sexual abuse,2006-07-04,"Vanguard
+							(1 )
+						, Independent
+							(1 )","Shomolu sister, nigeria",,
+killer,Tafawa-Balewa,Violence,2006-07-03,"New Nigerian
+							(3 )
+						, Comet
+							(3 )
+						, Independent
+							(2 )
+						, Daily Trust
+							(3 )","Tafawa-Balewa killer, nigeria",,
+wifes,Makurdi,Violence,2006-07-09,"New Nigerian
+							(1 )
+						, Vanguard
+							(1 )
+						, This Day
+							(1 )","Makurdi wifes, nigeria",,
+son,Agege,Violence,2006-07-11,"Daily Champion
+							(1 )
+						, The Punch
+							(1 )
+						, Independent
+							(1 )
+						, New Age
+							(1 )","Agege son, nigeria",,
+brothers,Agege,Terrorism,2006-07-11,"Daily Champion
+							(1 )
+						, The Punch
+							(1 )
+						, PM News
+							(1 )
+						, New Age
+							(1 )","Agege brothers, nigeria",,
+clash,Akuku Toru,Violence,2006-07-12,"The Punch
+							(1 )
+						, Vanguard
+							(1 )","Akuku Toru clash, nigeria",,
+clash,Oshimili South,Violence,2006-07-13,"This Day
+							(11 )
+						, Business Day
+							(4 )
+						, Daily Champion
+							(4 )
+						, police
+							(4 )
+						, Independent
+							(2 )","Oshimili South clash, nigeria",,
+driver,Owo,Terrorism,2006-07-12,"Daily Champion
+							(1 )
+						, The Guardian
+							(1 )
+						, Comet
+							(1 )","Owo driver, nigeria",,
+robbers,Agege,Violence,2006-07-12,"Independent
+							(2 )","Agege robbers, nigeria",,
+burnt,Ahiazu,Robbery,2006-07-12,"This Day
+							(1 )","Ahiazu burnt, nigeria",,
+Lagos,Alimosho,Others crimes,2006-06-02,"New Nigerian
+							(1 )
+						, Comet
+							(1 )
+						, PM News
+							(1 )
+						, Independent
+							(1 )","Alimosho, Lagos, Nigeria",3.257631097232365,6.58434295
+MOPOL,Agege,Terrorism,2006-07-01,"Independent
+							(1 )","Agege MOPOL, nigeria",,
+colleagues,Lagos Island,Terrorism,2006-06-30,"The Guardian
+							(1 )","Lagos Island colleagues, nigeria",,
+robber,Mushin,Violence,2006-07-12,"The Guardian
+							(1 )
+						, Other source (private security firms, etc)
+							(1 )","Mushin robber, nigeria",,
+explosives,Abuja Municipal,Violence,2006-07-15,"Business Day
+							(1 )","Abuja Municipal explosives, nigeria",,
+worker,Agege,Sexual abuse,2006-07-15,"Vanguard
+							(1 )
+						, Comet
+							(1 )","Agege worker, nigeria",,
+Osun,Ifelodun,,2006-07-17,"Comet
+							(1 )","Ifelodun, Osun, Nigeria",4.637033839531609,7.90451645
+Bauchi,Darazo,Robbery,2006-07-15,"Daily Trust
+							(1 )","Darazo, Bauchi, Nigeria",10.556201653796672,11.11887545
+Kaduna,Birnin-Gwari,Robbery,2006-07-18,"Comet
+							(9 )","Birnin Gwari, Magajin Gari 1, Birnin Gwari, Kaduna, Nigeria",6.543726,10.662429
+Rivers,Gokana,Violence,2006-07-20,"human rights organisation, humanitarian organisations
+							(20 )
+						, This Day
+							(6 )
+						, Vanguard
+							(10 )
+						, The Punch
+							(3 )
+						, The Guardian
+							(5 )
+						, Tell
+							(12 )","Gokana, Rivers, Nigeria",7.294484674317097,4.6578536
+Officer,Oriade,Violence,2006-07-25,"The Punch
+							(1 )
+						, The Nation
+							(1 )","Oriade Officer, nigeria",,
+Lagos,Ikeja,Violence,2006-07-26,"Daily Champion
+							(2 )
+						, The Punch
+							(2 )
+						, Vanguard
+							(2 )
+						, Independent
+							(2 )
+						, Daily Trust
+							(2 )","Ikeja, Lagos, Nigeria",3.340787,6.5960605
+station,Nnewi North,Violence,2006-07-23,"Daily Champion
+							(4 )
+						, The Guardian
+							(7 )
+						, The Punch
+							(6 )
+						, Vanguard
+							(4 )
+						, Comet
+							(3 )
+						, PM News
+							(6 )
+						, This Day
+							(3 )
+						, Independent
+							(4 )
+						, Daily Trust
+							(5 )","Nnewi North station, nigeria",,
+Badagry,Badagry,Violence,2006-07-31,"Independent
+							(3 )","Badagry, Lagos, Nigeria",2.8846128,6.4167339
+Island,Eti-Osa,Robbery,2006-07-31,"Independent
+							(2 )
+						, Other source (private security firms, etc)
+							(2 )","Eti-Osa Island, nigeria",,
+robbers,Agege,Violence,2006-08-04,"The Nation
+							(1 )","Agege robbers, nigeria",,
+Onitsha,"Onitsha North, Onitsha South",Robbery,2006-09-07,"Daily Champion
+							(2 )
+						, Vanguard
+							(2 )
+						, Tide News
+							(2 )","Onitsha - Owerri Road, Onitsha, Onitsha North, Anambra, 430231, Nigeria",6.7932442,6.1103202
+vandalization,Jalingo,Violence,2006-08-05,"New Nigerian
+							(25 )
+						, Daily Trust
+							(10 )","Jalingo vandalization, nigeria",,
+macheted,Chanchaga,Violence,2006-08-08,"The Guardian
+							(1 )
+						, The Punch
+							(1 )
+						, Independent
+							(1 )
+						, Daily Trust
+							(1 )","Chanchaga macheted, nigeria",,
+toll,Onitsha North,Violence,2006-08-17,"The Punch
+							(1 )
+						, Daily Trust
+							(3 )
+						, The Nation
+							(2 )
+						, Other source (private security firms, etc)
+							(2 )","Onitsha North toll, nigeria",,
+auto-crash,Odukpani,Violence,2006-08-14,"Business Day
+							(6 )
+						, Independent
+							(21 )","Odukpani auto-crash, nigeria",,
+traders,Katsina-Ala,Robbery,2006-08-16,"New Nigerian
+							(5 )","Katsina-Ala traders, nigeria",,
+station,Port-Harcourt,Violence,2006-08-17,"The Guardian
+							(3 )
+						, Vanguard
+							(3 )","Port Harcourt Station, Station Road, Prisons Dockyard, Port-Harcourt, Rivers, 520052, Nigeria",7.0164659,4.7650949
+invasion,Agege,Robbery,2006-08-17,"The Punch
+							(5 )","Agege invasion, nigeria",,
+Akwa-Ibom,Eket,Abduction,2006-10-05,"New Nigerian
+							(2 )
+						, The Guardian
+							(2 )
+						, Business Day
+							(2 )
+						, Port-Harcourt Telegraph
+							(2 )","Eket, Akwa Ibom, Nigeria",7.957541614633177,4.6360066
+2,"Onitsha North, Onitsha South",Robbery,2006-08-22,"Vanguard
+							(2 )
+						, Independent
+							(4 )
+						, Daily Trust
+							(2 )
+						, Other source (private security firms, etc)
+							(6 )","Onitsha North, Onitsha South 2, nigeria",,
+,Obio/Akpor,Terrorism,2006-08-25,"human rights organisation, humanitarian organisations
+							(3 )
+						, The Guardian
+							(1 )
+						, This Day
+							(1 )
+						, Independent
+							(1 )
+						, The Nation
+							(1 )
+						, Other source (private security firms, etc)
+							(1 )","Obio/Akpor, Rivers, Nigeria",7.020215533605061,4.86630685
+clash,Ikeja,Violence,2006-08-24,"The Guardian
+							(5 )","Ikeja clash, nigeria",,
+Rivers,Khana,Violence,2006-10-15,"Tide News
+							(3 )","Khana, Rivers, Nigeria",7.437540599064871,4.6693695
+leader,Uyo,Violence,2006-10-14,"Tide News
+							(1 )","Uyo leader, nigeria",,
+clash,Ojo,Violence,2006-08-26,"The Guardian
+							(3 )
+						, Vanguard
+							(3 )
+						, This Day
+							(3 )","Ojo clash, nigeria",,
+roasted,Ikeja,Robbery,2006-08-31,"The Guardian
+							(2 )
+						, Vanguard
+							(1 )
+						, PM News
+							(1 )
+						, Independent
+							(1 )","Ikeja roasted, nigeria",,
+Rivers,Degema,Violence,2006-06-02,"Other source (private security firms, etc)
+							(5 )
+						, Other newpapers 1
+							(5 )","Degema, Rivers, Nigeria",6.7680087,4.7579876
+Massob,Ojo,Terrorism,2006-06-28,"Other source (private security firms, etc)
+							(2 )","Ojo Massob, nigeria",,
+consultant,Koton Karfe,Fraud,2006-08-16,"New Nigerian
+							(3 )
+						, The Guardian
+							(3 )
+						, Daily Trust
+							(3 )","Koton Karfe consultant, nigeria",,
+clash,Esan West,Violence,2006-09-05,"Daily Champion
+							(8 )
+						, The Guardian
+							(6 )
+						, The Punch
+							(8 )
+						, Independent
+							(8 )","Esan West clash, nigeria",,
+ablaze,Alimosho,Robbery,2006-09-09,"Independent
+							(3 )","Alimosho ablaze, nigeria",,
+fire,Esan West,Violence,2006-09-05,"Independent
+							(1 )","Esan West fire, nigeria",,
+cattle,Etche,Terrorism,2006-09-15,"human rights organisation, humanitarian organisations
+							(3 )","Etche cattle, nigeria",,
+checkpoint,Bukuru,Violence,2006-09-10,"The Guardian
+							(5 )","Bukuru checkpoint, nigeria",,
+revenge,Shomolu,Violence,2006-09-15,"The Punch
+							(1 )
+						, Independent
+							(1 )","Shomolu revenge, nigeria",,
+victim,Surulere (Lagos),Violence,2006-09-14,"The Punch
+							(1 )
+						, Independent
+							(1 )","Surulere (Lagos) victim, nigeria",,
+Anambra,"Awka North, Awka South",Robbery,2006-09-19,"The Punch
+							(1 )
+						, Vanguard
+							(1 )","Cattle Market Awka, Old Enugu Road, Awka, Awka North, Anambra, Nigeria",7.1373114,6.2473481
+police,Oredo,Terrorism,2006-09-24,"Vanguard
+							(4 )","Central Police Station, Oba Market Division, Oba Market Road, Benin City, Oredo, Edo, 300241, Nigeria",5.620361721534197,6.3357348
+home,Ikorodu,Terrorism,2006-09-25,"The Punch
+							(1 )","home, Old Lagos Road, Maya, Ìkòròdú, Lagos, 104213, Nigeria",3.59399250189265,6.6584765
+patrol,Surulere (Lagos),Terrorism,2006-10-03,"The Guardian
+							(4 )
+						, Vanguard
+							(4 )
+						, This Day
+							(4 )","Surulere (Lagos) patrol, nigeria",,
+customs,Badagry,Terrorism,2006-10-03,"Daily Champion
+							(2 )","Badagry customs, nigeria",,
+clash,Khana,Violence,2006-10-06,"The Punch
+							(4 )
+						, Vanguard
+							(4 )
+						, This Day
+							(4 )","Khana clash, nigeria",,
+woman,Sabuwa,Terrorism,2006-10-01,"Vanguard
+							(1 )","Sabuwa woman, nigeria",,
+soldiers,Degema,Terrorism,2006-10-10,"human rights organisation, humanitarian organisations
+							(14 )","Degema soldiers, nigeria",,
+Lagos,Agege,Violence,2006-12-26,"Vanguard
+							(284 )
+						, Independent
+							(1000 )
+						, Daily Champion
+							(700 )
+						, The Punch
+							(286 )
+						, This Day
+							(1000 )
+						, Daily Triumph
+							(500 )
+						, human rights organisation, humanitarian organisations
+							(500 )","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+officer,Uvwie,Violence,2006-10-16,"The Punch
+							(1 )
+						, Vanguard
+							(1 )","Uvwie officer, nigeria",,
+Niger,Chanchaga,Terrorism,2006-10-15,"Daily Trust
+							(1 )
+						, The Punch
+							(1 )","Chanchaga, Bosso, Niger, Nigeria",6.583333,9.533333
+boy,Maiduguri,Terrorism,2006-10-15,"Daily Trust
+							(1 )","Maiduguri boy, nigeria",,
+officer,Ikeja,Violence,2006-10-17,"The Nation
+							(1 )","Ikeja officer, nigeria",,
+,Abuja Municipal,Violence,2006-10-16,"Daily Trust
+							(1 )
+						, Independent
+							(1 )","Abuja, Municipal Area Council, Federal Capital Territory, 223140, Nigeria",7.4892974,9.0643305
+2,Abuja Municipal,Violence,2006-10-16,"Independent
+							(1 )","2, Maccido Royal Estate, Galadimawa, Municipal Area Council, Federal Capital Territory, Nigeria",7.420612279073244,8.9748958
+station,Warri South,Violence,2006-09-21,"Vanguard
+							(1 )","Warri South station, nigeria",,
+Delta,Ethiope East,Robbery,2006-10-20,"Vanguard
+							(2 )","Ethiope East, Delta, Nigeria",5.972129657996909,5.6672926
+clash,Gokana,Violence,2006-10-26,"The Guardian
+							(3 )","Gokana clash, nigeria",,
+,Khana,Violence,2006-10-10,"Independent
+							(10 )","Khana, Rivers, Nigeria",7.437540599064871,4.6693695
+burnt,Mushin,Robbery,2006-10-30,"PM News
+							(2 )","Mushin burnt, nigeria",,
+"Boss""",Mangu,Robbery,2006-11-03,"Triumph
+							(1 )","Mangu Boss"", nigeria",,
+Warri,"Warri North, Warri South, Warri south west",Robbery,2006-11-07,"Independent
+							(4 )","Warri North, Warri South, Warri south west Warri, nigeria",,
+vandalization,Mayo-Belwa,Violence,2006-11-05,"Independent
+							(18 )
+						, Daily Champion
+							(20 )
+						, This Day
+							(20 )","Mayo-Belwa vandalization, nigeria",,
+baby,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Terrorism,2006-11-06,"The Nation
+							(1 )","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West baby, nigeria",,
+child,Babura,Terrorism,2006-11-01,"The Guardian
+							(1 )
+						, Daily Trust
+							(1 )","Babura child, nigeria",,
+clash,"Ughelli South, Ughelli North",Violence,2006-11-07,"PM News
+							(2 )
+						, Vanguard
+							(1 )","Ughelli South, Ughelli North clash, nigeria",,
+stolen,Ikot Abasi,Terrorism,2006-11-08,"The Punch
+							(1 )","Ikot Abasi stolen, nigeria",,
+orderly,Ughelli North,Violence,2006-11-10,"human rights organisation, humanitarian organisations
+							(1 )
+						, The Punch
+							(1 )
+						, The Guardian
+							(1 )","Ughelli North orderly, nigeria",,
+pupil,Shomolu,Terrorism,2006-11-09,"Independent
+							(1 )
+						, Daily Champion
+							(1 )","Shomolu pupil, nigeria",,
+colleague,Badagry,Terrorism,2006-11-11,"The Guardian
+							(1 )
+						, The Punch
+							(1 )","Badagry colleague, nigeria",,
+persons,Ekeremor,Terrorism,2006-11-11,"The Guardian
+							(2 )","Ekeremor persons, nigeria",,
+brother,Gombe LGA,Terrorism,2006-11-11,"Independent
+							(1 )
+						, The Guardian
+							(1 )","Gombe LGA brother, nigeria",,
+policemen,Abuja Municipal,Robbery,2006-11-12,"Independent
+							(3 )","Abuja Municipal policemen, nigeria",,
+expatriate,Bonny,Terrorism,2007-01-16,"The Guardian
+							(3 )
+						, This Day
+							(3 )
+						, The Nation
+							(4 )
+						, Daily Champion
+							(4 )
+						, Other newpapers 1
+							(3 )","Bonny expatriate, nigeria",,
+child,Shomolu,Terrorism,2006-11-10,"The Guardian
+							(1 )","Shomolu child, nigeria",,
+pedestrian,Ifako-Ijaiye,Terrorism,2006-11-11,"The Guardian
+							(1 )","Ifako-Ijaiye pedestrian, nigeria",,
+dead,Tai,Terrorism,2006-11-17,"Vanguard
+							(2 )
+						, The Guardian
+							(2 )
+						, The Nation
+							(2 )","Tai dead, nigeria",,
+ambassador,"Ogbomosho South, Ogbomosho North",Terrorism,2006-11-17,"Independent
+							(2 )","Ogbomosho South, Ogbomosho North ambassador, nigeria",,
+primaries,Onicha,Terrorism,2006-11-18,"Vanguard
+							(1 )","Onicha primaries, nigeria",,
+clash,Port-Harcourt,Violence,2006-11-20,"Vanguard
+							(2 )","Port-Harcourt clash, nigeria",,
+youth,Ughelli South,Terrorism,2006-11-19,"human rights organisation, humanitarian organisations
+							(1 )
+						, Independent
+							(1 )","Ughelli South youth, nigeria",,
+robbers,Oyi,Terrorism,2006-11-19,"Independent
+							(3 )","Oyi robbers, nigeria",,
+Rivers,Gokana,Others crimes,2006-11-18,"human rights organisation, humanitarian organisations
+							(1 )
+						, The Punch
+							(1 )","Gokana, Rivers, Nigeria",7.294484674317097,4.6578536
+pursuer,"Ughelli South, Ughelli North",Robbery,2006-11-18,"The Punch
+							(1 )","Ughelli South, Ughelli North pursuer, nigeria",,
+Congress,Kolokuma/Opokuma,Terrorism,2006-11-18,"New Nigerian
+							(1 )","Kolokuma/Opokuma Congress, nigeria",,
+purpose,Etung,Violence,2006-11-24,"The Guardian
+							(1 )","Etung purpose, nigeria",,
+police,Ondo West,Terrorism,2006-11-26,"The Nation
+							(1 )","Ondo West police, nigeria",,
+4,Ikeja,Robbery,2006-11-27,"The Nation
+							(4 )","Ifex Express, 4, Ikorodu Road, Onigbongbo, Ikeja, Lagos, 100001, Nigeria",3.369067115884566,6.5732634999999995
+burnt,Eleme,Violence,2006-11-26,"The Punch
+							(1 )
+						, Nigeria Delta Standard
+							(3 )
+						, Independent
+							(1 )
+						, Vanguard
+							(1 )
+						, The Guardian
+							(1 )","Eleme burnt, nigeria",,
+deads,Lagos Mainland,Violence,2006-11-21,"Vanguard
+							(4 )","Lagos Mainland deads, nigeria",,
+police,"Ondo East, Ondo West",Terrorism,2006-11-30,"The Nation
+							(1 )","Ondo East, Ondo West police, nigeria",,
+roasted,Agege,Robbery,2006-11-30,"Daily Champion
+							(4 )","Agege roasted, nigeria",,
+explosion,Alimosho,Terrorism,2006-12-02,"Daily Champion
+							(2 )
+						, Vanguard
+							(2 )
+						, The Guardian
+							(1 )","Alimosho explosion, nigeria",,
+chairman,Ado-Ekiti,Violence,2006-12-01,"Daily Trust
+							(1 )
+						, The Nation
+							(1 )
+						, The Punch
+							(1 )
+						, The Guardian
+							(1 )","Ado-Ekiti chairman, nigeria",,
+,Badagry,Terrorism,2006-11-29,"The Guardian
+							(1 )","Badagry, Lagos, Nigeria",2.9060324070376966,6.43932225
+city,Oredo,Terrorism,2006-11-28,"The Guardian
+							(1 )
+						, The Nation
+							(1 )
+						, New Nigerian
+							(1 )
+						, Independent
+							(1 )","Oredo park, Benin City, Oredo, Edo, Nigeria",5.621154786955605,6.3326928
+Lagos,Amuwo-Odofin,Terrorism,2006-12-02,"Daily Trust
+							(3 )","Amuwo Odofin, Lagos, Nigeria",3.2662797116825857,6.4470234
+sergeant,Mushin,Robbery,2006-11-30,"Daily Trust
+							(1 )","Mushin sergeant, nigeria",,
+expatriate,Ikeja,Terrorism,2006-11-16,"The Nation
+							(1 )","Ikeja expatriate, nigeria",,
+FCT,Abuja Municipal,Violence,2006-12-05,"This Day
+							(1 )
+						, The Punch
+							(1 )
+						, Daily Trust
+							(1 )
+						, Daily Champion
+							(1 )","Abuja, Municipal Area Council, Federal Capital Territory, 223140, Nigeria",7.4892974,9.0643305
+policemen,Abuja Municipal,Robbery,2006-12-01,"Daily Trust
+							(4 )","Abuja Municipal policemen, nigeria",,
+firm,Brass,Terrorism,2006-12-06,"Vanguard
+							(1 )
+						, The Guardian
+							(1 )
+						, Independent
+							(1 )","Brass firm, nigeria",,
+,Nsukka,Violence,2006-12-10,"Independent
+							(1 )","Nsukka, Enugu, 410001, Nigeria",7.3927,6.8561
+attempt,Mushin,Violence,2006-12-11,"The Nation
+							(1 )","Mushin attempt, nigeria",,
+Ondo,Ifedore,Terrorism,2006-10-13,"The Guardian
+							(2 )","Ifedore, Ondo, Nigeria",5.110368124845809,7.3528421
+crash,Oshodi-Isolo,Robbery,2006-12-13,"Daily Trust
+							(2 )","Oshodi-Isolo crash, nigeria",,
+gunmen,Abuja Municipal,Terrorism,2006-12-11,"Daily Trust
+							(1 )","Abuja Municipal gunmen, nigeria",,
+bus,Apapa,Robbery,2006-12-12,"The Guardian
+							(1 )","Apapa bus, nigeria",,
+bus,Badagry,Terrorism,2006-12-12,"The Guardian
+							(1 )","Badagry bus, nigeria",,
+attack,"Lagos Island, Lagos Mainland",Robbery,2006-12-12,"The Guardian
+							(1 )","Lagos Island, Lagos Mainland attack, nigeria",,
+policemen,"Alimosho, Ikeja",Robbery,2006-12-14,"Daily Champion
+							(2 )
+						, The Punch
+							(2 )
+						, Independent
+							(2 )","Alimosho, Ikeja policemen, nigeria",,
+robber,Ikorodu,Terrorism,2006-12-14,"Vanguard
+							(1 )","Ikorodu robber, nigeria",,
+welder,Mushin,Violence,2006-12-15,"Vanguard
+							(1 )","Mushin welder, nigeria",,
+centre,Oredo,Others crimes,2006-12-14,"Vanguard
+							(1 )","Reconcilation Centre International Christain Centre, Akenzua Street, Benin City, Oredo, Edo, 300102, Nigeria",5.614704,6.3346831
+clash,Ojo,Violence,2006-12-14,"Daily Trust
+							(1 )","Ojo clash, nigeria",,
+clash,Oshodi-Isolo,Violence,2006-12-14,"Daily Trust
+							(1 )","Oshodi-Isolo clash, nigeria",,
+station,Southern Ijaw,Terrorism,2006-12-14,"The Punch
+							(2 )
+						, The Nation
+							(1 )
+						, Vanguard
+							(2 )
+						, This Day
+							(2 )","Southern Ijaw station, nigeria",,
+cops,Awka North,Violence,2006-12-09,"Vanguard
+							(2 )","Awka North cops, nigeria",,
+robbers,Ikeja,Terrorism,2006-12-20,"PM News
+							(5 )
+						, New Nigerian
+							(8 )
+						, The Punch
+							(1 )
+						, Vanguard
+							(9 )
+						, Daily Trust
+							(8 )","Ikeja robbers, nigeria",,
+robbery,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Terrorism,2006-12-21,"Daily Trust
+							(2 )","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West robbery, nigeria",,
+policemen,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Robbery,2006-12-21,"The Punch
+							(7 )
+						, Independent
+							(7 )
+						, The Nation
+							(7 )
+						, Vanguard
+							(7 )","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West policemen, nigeria",,
+customer,Etsako West,Robbery,2006-12-20,"Vanguard
+							(1 )","Etsako West customer, nigeria",,
+Onitsha,Onicha,Terrorism,2006-12-21,"Daily Champion
+							(1 )
+						, The Nation
+							(1 )","Onitsha, Onitsha North, Anambra, 430231, Nigeria",6.8019088,6.1461619
+robbers,Apapa,Violence,2006-12-18,"Independent
+							(8 )","Apapa robbers, nigeria",,
+one,Agege,Terrorism,2006-12-17,"PM News
+							(1 )
+						, Daily Champion
+							(1 )","Agege one, nigeria",,
+friend,Ikorodu,Terrorism,2006-12-29,"Vanguard
+							(1 )
+						, The Punch
+							(1 )","Ikorodu friend, nigeria",,
+N20,Abuja Municipal,Terrorism,2006-12-25,"Independent
+							(3 )
+						, Daily Champion
+							(2 )
+						, Vanguard
+							(2 )","Area 2 Section 1 Garki Abuja, Nigeria, Garki I, Abuja, Municipal Area Council, Federal Capital Territory, Nigeria",7.475407639698163,9.0354049
+,Port-Harcourt,Violence,2006-12-25,"Vanguard
+							(5 )
+						, The Punch
+							(7 )
+						, Independent
+							(5 )
+						, Tell
+							(5 )
+						, The Nation
+							(5 )","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+Port-Harcourt,Port-Harcourt,Abduction,2006-12-25,"The Punch
+							(2 )
+						, Independent
+							(3 )
+						, The Nation
+							(3 )","Olusegun Obasanjo Bypass, Port Harcourt, Dobu, Port-Harcourt, Rivers, 520052, Nigeria",6.9938498,4.8052579
+motorists,"Etinan, Ikot Abasi, Mkpat Enin, Uyo",Terrorism,2006-10-01,"The Punch
+							(5 )","Etinan, Ikot Abasi, Mkpat Enin, Uyo motorists, nigeria",,
+soldiers,"Owerri-Municipal, Owerri West",Terrorism,2006-12-25,"New Nigerian
+							(1 )
+						, The Guardian
+							(1 )","Owerri-Municipal, Owerri West soldiers, nigeria",,
+Imo,Aba South,Robbery,2006-12-27,"The Guardian
+							(4 )","Aba South Imo, nigeria",,
+police,Gusau,Terrorism,2006-12-30,"Daily Trust
+							(1 )","Police Clinic, Premier Road, Tudun Wada, Gusau, Zamfara, Nigeria",6.6665688,12.1679799
+robber,"Bama, Gwoza",Terrorism,2006-12-28,"Daily Trust
+							(1 )","Bama, Gwoza robber, nigeria",,
+"N150,000",Alimosho,Terrorism,2006-12-20,"Daily Trust
+							(1 )","Alimosho N150,000, nigeria",,
+12,Obio/Akpor,Terrorism,2006-12-31,"Daily Champion
+							(12 )
+						, Independent
+							(7 )
+						, The Nation
+							(6 )
+						, The Punch
+							(7 )
+						, Tell
+							(7 )
+						, The Guardian
+							(7 )
+						, Vanguard
+							(9 )","Obio/Akpor 12, nigeria",,
+Head,Etim Ekpo,Violence,2006-12-30,"Independent
+							(1 )","Etim Ekpo Head, nigeria",,
+,Uvwie,Terrorism,2006-12-30,"Vanguard
+							(1 )","Uvwie, Delta, 330102, Nigeria",5.793784028700437,5.56435905
+raid,Port-Harcourt,Violence,2006-12-31,"The Guardian
+							(3 )","Port-Harcourt raid, nigeria",,
+hideout,Port-Harcourt,Violence,2007-01-02,"The Punch
+							(2 )","Port-Harcourt hideout, nigeria",,
+Anambra,Awka South,Others crimes,2007-01-04,"Daily Champion
+							(2 )","Awka South, Anambra, Nigeria",7.0943469415059655,6.19405605
+youths,Ughelli North,Violence,2007-01-04,"The Punch
+							(3 )
+						, Daily Champion
+							(3 )","Ughelli North youths, nigeria",,
+soldiers,Ughelli North,Violence,2007-01-05,"Vanguard
+							(5 )
+						, The Punch
+							(5 )
+						, Daily Champion
+							(5 )","Ughelli North soldiers, nigeria",,
+woman,Agege,Violence,2007-01-05,"The Punch
+							(1 )","Agege woman, nigeria",,
+Ogoniland,Gokana,Violence,2007-01-09,"This Day
+							(2 )
+						, Vanguard
+							(2 )
+						, The Punch
+							(2 )","Gokana Ogoniland, nigeria",,
+Zamfara,Tsafe,Terrorism,2007-01-08,"Vanguard
+							(6 )
+						, New Nigerian
+							(6 )
+						, Daily Triumph
+							(6 )","Tsafe, Zamfara, Nigeria",6.904243258015785,11.823444550000001
+Rivers,Akuku Toru,Terrorism,2007-01-07,"The Punch
+							(1 )","Akuku Toru, Rivers, Nigeria",6.678670665142749,4.53362895
+Rivers,Ndokwa East,Terrorism,2007-01-05,"Daily Trust
+							(2 )","Ndokwa East Rivers, nigeria",,
+ablazed,Ikeja,Robbery,2007-01-12,"Vanguard
+							(2 )","Ikeja ablazed, nigeria",,
+youths,Gboko,Violence,2007-01-14,"The Guardian
+							(6 )","Gboko youths, nigeria",,
+militants,Akuku Toru,Terrorism,2007-01-14,"Vanguard
+							(12 )
+						, Independent
+							(12 )
+						, Other newpapers 1
+							(12 )
+						, Daily Triumph
+							(12 )
+						, Daily Trust
+							(12 )
+						, The Punch
+							(12 )","Akuku Toru militants, nigeria",,
+,"Abaji, Gwagwalada",Robbery,2007-01-15,"This Day
+							(4 )
+						, Daily Trust
+							(3 )","Abaji, Gwagwalada , nigeria",,
+police,Abuja Municipal,Terrorism,2007-01-15,"Daily Trust
+							(1 )","Nigerian Police Headquarters, Bola Ige Close, Asokoro, Abuja, Municipal Area Council, Federal Capital Territory, 900103, Nigeria",7.50740510408415,9.0532822
+baker,Agege,Robbery,2007-01-16,"Independent
+							(1 )","Agege baker, nigeria",,
+Lagos,Agege,,2007-01-22,"Independent
+							(5 )
+						, The Nation
+							(3 )
+						, Daily Champion
+							(2 )","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+leader,Lagos Island,Violence,2007-01-24,"PM News
+							(1 )","Lagos Island leader, nigeria",,
+Militants,Port-Harcourt,Terrorism,2007-01-28,"Daily Trust
+							(1 )
+						, This Day
+							(5 )
+						, Vanguard
+							(1 )
+						, The Nation
+							(2 )
+						, New Nigerian
+							(2 )","Port-Harcourt Militants, nigeria",,
+butcher,Port-Harcourt,Terrorism,2007-01-28,"Daily Trust
+							(1 )","Port-Harcourt butcher, nigeria",,
+Imo,Orsu,Violence,2007-01-28,"Vanguard
+							(3 )","Orsu, Imo, Nigeria",6.982806157947056,5.84942675
+toll,Ondo West,Terrorism,2007-01-28,"The Nation
+							(1 )","Ondo West toll, nigeria",,
+strike,Ibadan South West,Robbery,2007-01-25,"New Nigerian
+							(3 )
+						, Daily Champion
+							(3 )
+						, Vanguard
+							(3 )
+						, The Nation
+							(3 )
+						, The Guardian
+							(3 )","Ibadan South West strike, nigeria",,
+robbers,Apapa,Terrorism,2007-01-24,"The Nation
+							(2 )
+						, The Punch
+							(2 )
+						, Daily Trust
+							(1 )
+						, The Guardian
+							(2 )","Apapa robbers, nigeria",,
+Delta,"Okpe, Warri South",Violence,2007-01-25,"New Nigerian
+							(2 )","3Udumukpokpor Street, 3, Omadino-Ughoton Road, Jeddo, Okpe, Delta, 330102, Nigeria",5.7062612,5.5938871
+Kaduna,Sabon-Gari,Violence,2007-01-28,"The Punch
+							(1 )
+						, Daily Trust
+							(1 )","Sabon Gari, Kaduna, Nigeria",7.7068114047212335,11.16656815
+Delta,Isoko south,Robbery,2006-06-07,"Independent
+							(2 )","Isoko South, Delta, Nigeria",6.211049621044424,5.3895204
+guard,Shomolu,Terrorism,2007-02-05,"The Guardian
+							(1 )
+						, The Nation
+							(1 )","Shomolu guard, nigeria",,
+ablazed,Ikeja,Robbery,2007-02-05,"The Punch
+							(3 )","Ikeja ablazed, nigeria",,
+,Alimosho,Violence,2007-02-03,"Daily Trust
+							(1 )","Alimosho, Lagos, Nigeria",3.257631097232365,6.58434295
+operation,Mushin,Robbery,2007-02-03,"Daily Champion
+							(5 )
+						, This Day
+							(5 )
+						, The Punch
+							(2 )","Mushin operation, nigeria",,
+2,Oshodi-Isolo,Robbery,2007-02-03,"The Punch
+							(3 )","Isolo Road, Isagatedo, Oshodi/Isolo, Lagos, 100263, Nigeria",3.3339753,6.5312802
+Osun,Osogbo,Terrorism,2007-02-02,"The Punch
+							(5 )","Osogbo, Osun, 230261, Nigeria",4.575044734945106,7.75832225
+Edo,Owan-East,Terrorism,2007-01-30,"The Nation
+							(1 )","Owan East, Edo, Nigeria",6.105629730319855,7.030605550000001
+citizen,Owerri North,Terrorism,2006-06-22,"human rights organisation, humanitarian organisations
+							(1 )","Owerri North citizen, nigeria",,
+rivers,Ogba/Egbema/Ndoni,Robbery,2007-02-08,"Vanguard
+							(2 )
+						, Daily Champion
+							(2 )
+						","Ogba/Egbema/Ndoni, Rivers, Nigeria",6.640917843681434,5.4512857
+enugu,Enugu North,Violence,2007-02-05,"Independent
+							(1 )
+						","Enugu North, Enugu, Nigeria",7.538320722978639,6.44107845
+nasarawa,Lafia,Terrorism,2007-02-09,"The Guardian
+							(1 )
+						","Lafia, Nasarawa, Nigeria",8.516667,8.483333
+Itu,Umuahia North,Violence,2006-12-04,"Independent
+							(1 )
+						","Umuahia North Itu, nigeria",0.0,0.0
+Itu,"Aba North, Aba South",Violence,2006-12-04,"Independent
+							(1 )
+						","Aba North, Aba South Itu, nigeria",0.0,0.0
+Itu,Umuahia North,Terrorism,2006-12-04,"Independent
+							(1 )
+						","Umuahia North Itu, nigeria",0.0,0.0
+gombe,Gombe LGA,Violence,2007-02-11,"Daily Champion
+							(1 )
+						","NYSC Office, Billiri LGA Gombe, A345, Biliri, Billiri, Gombe, Nigeria",11.2236641,9.8951927
+Ife,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Terrorism,2006-12-23,"Daily Trust
+							(1 )
+						, PM News
+							(1 )
+						","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West Ife, nigeria",0.0,0.0
+osun,Ila,Terrorism,2007-02-14,"Daily Champion
+							(1 )
+						","Ila, Ilesha West, Osun, Nigeria",4.666667,7.666667
+gombe,Gombe LGA,Robbery,2013-11-24,"Daily Trust
+							(1 )
+						","NYSC Office, Billiri LGA Gombe, A345, Biliri, Billiri, Gombe, Nigeria",11.2236641,9.8951927
+plateau,Jos North,Violence,2007-02-06,"Daily Champion
+							(2 )
+						","Jos North, Plateau, Nigeria",8.892985163197897,9.942195850000001
+lagos,Alimosho,,2007-02-21,"The Guardian
+							(4 )
+						","Alimosho, Lagos, Nigeria",3.257631097232365,6.58434295
+rivers,Port-Harcourt,Robbery,2007-02-22,"The Guardian
+							(4 )
+						, Daily Champion
+							(4 )
+						, The Punch
+							(4 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+zamfara,"Anka, Bukkuyum",Terrorism,2007-02-23,"New Nigerian
+							(2 )
+						, The Nation
+							(2 )
+						, Daily Trust
+							(2 )
+						, Vanguard
+							(2 )
+						","Anka, Bukkuyum zamfara, nigeria",0.0,0.0
+delta,Ethiope East,Violence,2007-02-24,"The Nation
+							(1 )
+						","Ethiope East, Delta, Nigeria",5.972129657996909,5.6672926
+lagos,Lagos Mainland,Terrorism,2007-02-26,"Independent
+							(1 )
+						","Lagos Mainland, Lagos, 104233, Nigeria",3.388249637209558,6.49306105
+Itu,Birnin-Kebbi,Terrorism,2007-02-26,"New Nigerian
+							(1 )
+						, PM News
+							(1 )
+						","Birnin-Kebbi Itu, nigeria",0.0,0.0
+oyo,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Violence,2007-03-07,"The Punch
+							(1 )
+						","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West oyo, nigeria",0.0,0.0
+Port-Harcourt,Port-Harcourt,Violence,2007-03-09,"Vanguard
+							(2 )
+						, Port-Harcourt Telegraph
+							(4 )
+						","Olusegun Obasanjo Bypass, Port Harcourt, Dobu, Port-Harcourt, Rivers, 520052, Nigeria",6.9938498,4.8052579
+Port-Harcourt,Port-Harcourt,Violence,2007-03-08,"Vanguard
+							(14 )
+						, Port-Harcourt Telegraph
+							(15 )
+						","Olusegun Obasanjo Bypass, Port Harcourt, Dobu, Port-Harcourt, Rivers, 520052, Nigeria",6.9938498,4.8052579
+kaduna,Kagarko,Terrorism,2007-03-26,"Other source (private security firms, etc)
+							(120 )
+						, Daily Champion
+							(110 )
+						, The Guardian
+							(100 )
+						, This Day
+							(90 )
+						, Vanguard
+							(100 )
+						, The Punch
+							(90 )
+						, The Nation
+							(110 )
+						, Independent
+							(90 )
+						, New Nigerian
+							(120 )
+						","Kagarko, Kagarko South, Kagarko, Kaduna, Nigeria",7.6977654,9.4936526
+Onicha,Onicha,Violence,2007-03-29,"Daily Champion
+							(15 )
+						, This Day
+							(15 )
+						","Onicha, Ebonyi, Nigeria",7.8348576,6.1162455
+osun,Osogbo,Violence,2007-03-25,"The Punch
+							(2 )
+						","Osogbo, Osun, 230261, Nigeria",4.575044734945106,7.75832225
+kwara,Oyun,Terrorism,2007-04-10,"The Nation
+							(4 )
+						","Oyun, Kwara, Nigeria",4.631635446280292,8.19984915
+rivers,"Emuoha, Ikwerre",Violence,2007-04-12,"Daily Champion
+							(5 )
+						, Vanguard
+							(5 )
+						, This Day
+							(5 )
+						","Emuoha, Ikwerre rivers, nigeria",0.0,0.0
+bayelsa,Yenagoa,Terrorism,2007-04-12,"The Guardian
+							(1 )
+						, Daily Champion
+							(1 )
+						, The Punch
+							(1 )
+						, This Day
+							(1 )
+						","Yenegoa, Bayelsa, Nigeria",6.2747786,4.9334651
+rivers,Port-Harcourt,Violence,2007-04-12,"Daily Champion
+							(6 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+edo,Owan-East,Abduction,2007-04-12,"Vanguard
+							(2 )
+						","Owan East, Edo, Nigeria",6.105629730319855,7.030605550000001
+ogun,Shagamu,Terrorism,2007-04-14,"Independent
+							(1 )
+						","Shagamu, Ogun, Nigeria",3.6440551,6.8477165
+rivers,Port-Harcourt,Terrorism,2007-04-14,"The Guardian
+							(7 )
+						, Vanguard
+							(7 )
+						, The Punch
+							(7 )
+						, This Day
+							(7 )
+						, Independent
+							(8 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+Port-Harcourt,Port-Harcourt,Robbery,2007-04-10,"Daily Champion
+							(37 )
+						, Independent
+							(2 )
+						","Olusegun Obasanjo Bypass, Port Harcourt, Dobu, Port-Harcourt, Rivers, 520052, Nigeria",6.9938498,4.8052579
+rivers,Port-Harcourt,Robbery,2007-04-15,"Independent
+							(1 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+kano,Kumbotso,Violence,2007-04-17,"New Nigerian
+							(42 )
+						, Other source (private security firms, etc)
+							(63 )
+						, Independent
+							(40 )
+						, The Nation
+							(42 )
+						, This Day
+							(42 )
+						, The Punch
+							(42 )
+						, Vanguard
+							(42 )
+						","Kumbotso, Kano, Nigeria",8.505475816294247,11.88889105
+imo,Owerri-Municipal,Terrorism,2007-04-14,"The Punch
+							(1 )
+						","Owerri Municipal, Imo, Nigeria",7.021982734009069,5.479900600000001
+osun,Osogbo,Terrorism,2007-04-17,"The Punch
+							(2 )
+						","Osogbo, Osun, 230261, Nigeria",4.575044734945106,7.75832225
+bayelsa,Yenagoa,Robbery,2007-04-20,"The Nation
+							(9 )
+						, New Nigerian
+							(2 )
+						","Yenegoa, Bayelsa, Nigeria",6.2747786,4.9334651
+niger,Edati,Terrorism,2007-04-22,"New Nigerian
+							(1 )
+						","Edati, Niger, Nigeria",5.999754848120109,8.963337450000001
+kwara,"Ilorin East, Ilorin West, Ilorin-South",Terrorism,2007-04-24,"The Nation
+							(1 )
+						","Ilorin East, Ilorin West, Ilorin-South kwara, nigeria",0.0,0.0
+Ibadan,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Violence,2007-04-21,"New Nigerian
+							(0 )
+						, The Nation
+							(1 )
+						","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West Ibadan, nigeria",0.0,0.0
+lagos,Ikorodu,Violence,2007-04-29,"Independent
+							(1 )
+						","Ìkòròdú, Lagos, Nigeria",3.5041271,6.6191233
+lagos,Agege,Terrorism,2007-04-29,"Daily Champion
+							(1 )
+						, The Punch
+							(1 )
+						","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+Ibadan,Akinyele,Others crimes,2007-03-19,"Independent
+							(1 )
+						","Oba Akinyele Street, Old Bodija, Ibadan North, Oyo, 234102, Nigeria",3.9054222,7.4193634
+edo,Oredo,Terrorism,2007-05-02,"The Nation
+							(1 )
+						, The Punch
+							(1 )
+						","Oredo, Edo, Nigeria",5.561790183209288,6.229763050000001
+lagos,Lagos Mainland,Robbery,2007-05-02,"Independent
+							(1 )
+						","Lagos Mainland, Lagos, 104233, Nigeria",3.388249637209558,6.49306105
+benue,Katsina-Ala,Violence,2007-05-05,"Daily Trust
+							(4 )
+						, The Guardian
+							(4 )
+						","Katsina Ala, Buruku, Benue, Nigeria",9.283333,7.166667
+enugu,"Enugu South, Enugu North, Enugu East",Terrorism,2007-05-07,"Vanguard
+							(1 )
+						","Ministry Of Education Zonal Inspectorate Office Enugu, NABTEB South East Zonal Office, Independence Layout, Enugu, Enugu North, Enugu, 400261, Nigeria",7.505088,6.435785
+delta,"Ughelli South, Patani",Robbery,2007-04-25,"New Nigerian
+							(2 )
+						, Daily Champion
+							(2 )
+						","Ughelli South, Patani delta, nigeria",0.0,0.0
+lagos,Badagry,Robbery,2007-04-25,"New Nigerian
+							(2 )
+						","Badagry, Lagos, Nigeria",2.9060324070376966,6.43932225
+rivers,Ikwerre,Violence,2007-05-10,"The Guardian
+							(2 )
+						","Ikwerre, Rivers, Nigeria",6.882004611347118,5.07051515
+imo,Aboh-Mbaise,Robbery,2007-05-09,"The Punch
+							(1 )
+						","Aboh-Mbaise, Imo, 462103, Nigeria",7.260670204366807,5.4188933
+enugu,"Enugu South, Enugu North, Enugu East",Terrorism,2007-05-10,"The Punch
+							(4 )
+						","Ministry Of Education Zonal Inspectorate Office Enugu, NABTEB South East Zonal Office, Independence Layout, Enugu, Enugu North, Enugu, 400261, Nigeria",7.505088,6.435785
+lagos,Apapa,Robbery,2007-05-11,"Vanguard
+							(1 )
+						","Apapa, Lagos, Nigeria",3.3683731679424094,6.445187000000001
+lagos,Shomolu,Others crimes,2007-05-11,"The Guardian
+							(1 )
+						, The Punch
+							(1 )
+						","Shomolu, Lagos, 100231, Nigeria",3.38416340600858,6.533564500000001
+zamfara,Gusau,Violence,2007-05-12,"The Nation
+							(1 )
+						","Gusau, Zamfara, Nigeria",6.6606398,12.1658358
+lagos,Surulere (Lagos),Robbery,2007-05-14,"The Guardian
+							(2 )
+						","Surulere, Lagos, 101212, Nigeria",3.353258726723983,6.487201450000001
+lagos,Ikorodu,Violence,2007-05-08,"New Nigerian
+							(2 )
+						","Ìkòròdú, Lagos, Nigeria",3.5041271,6.6191233
+rivers,Emuoha,Violence,2007-04-30,"New Nigerian
+							(1 )
+						","Emuoha, Rivers, Nigeria",6.763568631220181,5.0315990500000005
+lagos,Apapa,Robbery,2007-05-12,"The Punch
+							(2 )
+						","Apapa, Lagos, Nigeria",3.3683731679424094,6.445187000000001
+anambra,"Awka North, Awka South",Terrorism,2007-04-14,"The Nation
+							(1 )
+						","Cattle Market Awka, Old Enugu Road, Awka, Awka North, Anambra, Nigeria",7.1373114,6.2473481
+bayelsa,Ogbia,Terrorism,2007-05-16,"The Guardian
+							(4 )
+						, Daily Champion
+							(3 )
+						, Vanguard
+							(2 )
+						","Ogbia, Bayelsa, Nigeria",6.3166058,4.6868354
+lagos,Ikeja,,2007-05-16,"Independent
+							(4 )
+						, Vanguard
+							(3 )
+						","Ikeja, Lagos, Nigeria",3.340787,6.5960605
+imo,Oguta,Terrorism,2007-05-24,"The Guardian
+							(1 )
+						","Oguta, Imo, Nigeria",6.809365,5.710435
+abia,"Aba North, Aba South",Terrorism,2007-05-23,"This Day
+							(2 )
+						","Aba River, Ukwa East, Abia, Nigeria",7.4387741,4.9889014
+benue,Otukpo,Robbery,2007-05-15,"New Nigerian
+							(2 )
+						","Oturkpo, Benue, Nigeria",8.1328576,7.1912599
+lagos,Mushin,Terrorism,2007-05-19,"The Punch
+							(2 )
+						, Daily Champion
+							(4 )
+						","Mushin, Lagos, 102215, Nigeria",3.3571405,6.526262
+lagos,Surulere (Lagos),Robbery,2007-05-19,"Daily Champion
+							(1 )
+						","Surulere, Lagos, 101212, Nigeria",3.353258726723983,6.487201450000001
+lagos,Ikeja,Terrorism,2007-05-19,"Daily Champion
+							(2 )
+						","Ikeja, Lagos, Nigeria",3.340787,6.5960605
+lagos,Mushin,,2007-05-22,"The Guardian
+							(6 )
+						, Daily Trust
+							(5 )
+						, Vanguard
+							(4 )
+						, Daily Champion
+							(3 )
+						","Mushin, Lagos, 102215, Nigeria",3.3571405,6.526262
+lagos,Oshodi-Isolo,Robbery,2007-05-10,"Other newpapers 1
+							(4 )
+						","Oshodi/Isolo, Lagos, 100263, Nigeria",3.3124146026491035,6.5400100000000005
+kogi,Lokoja,Violence,2007-05-20,"Independent
+							(3 )
+						","Lokoja, Kogi, 260101, Nigeria",6.7430327,7.802355
+rivers,Port-Harcourt,Terrorism,2007-05-24,"The Nation
+							(4 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+niger,Wushishi,Violence,2007-05-17,"The Punch
+							(5 )
+						","Wushishi, Niger, Nigeria",5.910315277747708,9.711346599999999
+rivers,Eleme,Abduction,2007-05-19,"Independent
+							(3 )
+						, Daily Champion
+							(3 )
+						, The Guardian
+							(3 )
+						","Eleme, Rivers, 501101, Nigeria",7.148448227532709,4.786104
+delta,Sapele,Robbery,2007-05-16,"Independent
+							(1 )
+						, The Guardian
+							(1 )
+						","Sapele, Delta, Nigeria",5.660127976472991,5.83156395
+rivers,Degema,Violence,2007-05-29,"This Day
+							(15 )
+						, Other source (private security firms, etc)
+							(15 )
+						, Vanguard
+							(15 )
+						, The Nation
+							(18 )
+						","Degema, Rivers, Nigeria",6.7680087,4.7579876
+akwa Ibom,Ikot Abasi,Abduction,2007-06-03,"Daily Champion
+							(1 )
+						, This Day
+							(1 )
+						, Vanguard
+							(1 )
+						","Ikot Abasi, Akwa Ibom, 534101, Nigeria",7.634969399377504,4.60783505
+anambra,"Onitsha North, Onitsha South",Robbery,2007-06-03,"Daily Trust
+							(7 )
+						, The Nation
+							(7 )
+						","Onitsha - Owerri Road, Onitsha, Onitsha North, Anambra, 430231, Nigeria",6.7932442,6.1103202
+delta,"Ughelli South, Patani",Terrorism,2007-06-04,"The Nation
+							(5 )
+						","Ughelli South, Patani delta, nigeria",0.0,0.0
+rivers,Eleme,Terrorism,2007-06-01,"Daily Champion
+							(3 )
+						, The Guardian
+							(2 )
+						, The Punch
+							(2 )
+						, Vanguard
+							(2 )
+						","Eleme, Rivers, 501101, Nigeria",7.148448227532709,4.786104
+anambra,Awka South,Terrorism,2007-05-26,"Daily Champion
+							(1 )
+						","Awka South, Anambra, Nigeria",7.0943469415059655,6.19405605
+bauchi,Ganjuwa,Robbery,2007-05-27,"The Guardian
+							(2 )
+						","Ganjuwa, Ganjuwa A, Ganjuwa, Bauchi, Nigeria",10.168795,10.859426
+rivers,Port-Harcourt,Terrorism,2007-06-03,"The Nation
+							(1 )
+						, Vanguard
+							(1 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+niger,Suleja,Terrorism,2007-06-02,"Daily Trust
+							(1 )
+						","Suleja, Niger, Nigeria",7.187189747918152,9.20816565
+lagos,Ikorodu,Terrorism,2007-06-01,"The Punch
+							(1 )
+						","Ìkòròdú, Lagos, Nigeria",3.5041271,6.6191233
+lagos,Agege,,2007-06-04,"New Nigerian
+							(2 )
+						","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+ebonyi,"Ohafia, Afikpo South",Terrorism,2007-06-04,"This Day
+							(13 )
+						","Ohafia, Afikpo South ebonyi, nigeria",0.0,0.0
+ondo,Owo,Others crimes,2007-01-06,"The Guardian
+							(1 )
+						","Ọ̀wọ̀, Ondo, Nigeria",5.5868016,7.1962012
+cross river,"Biase, Abi",Violence,2007-05-26,"Independent
+							(2 )
+						","Biase, Abi cross river, nigeria",0.0,0.0
+cross river,Calabar Municipality,Terrorism,2007-06-04,"PM News
+							(1 )
+						","Calabar Municipality cross river, nigeria",0.0,0.0
+plateau,"Jos East, Jos North, Jos South",Robbery,2007-06-02,"Daily Trust
+							(4 )
+						","Jos East, Jos North, Jos South plateau, nigeria",0.0,0.0
+lagos,Alimosho,Terrorism,2007-06-01,"The Guardian
+							(1 )
+						","Alimosho, Lagos, Nigeria",3.257631097232365,6.58434295
+borno,Bama,Violence,2007-06-07,"The Guardian
+							(1 )
+						, Independent
+							(1 )
+						","Bama, Borno, Nigeria",14.0064277,11.54544
+lagos,Lagos Mainland,Terrorism,2007-05-30,"The Nation
+							(1 )
+						","Lagos Mainland, Lagos, 104233, Nigeria",3.388249637209558,6.49306105
+imo,Orlu,Terrorism,2007-06-06,"Daily Champion
+							(1 )
+						","Orlu, Imo, Nigeria",7.0409322202359785,5.8179105
+osun,Ife North,Robbery,2007-06-08,"This Day
+							(2 )
+						","Ife North, Osun, 220282, Nigeria",4.452865817628522,7.27761555
+bayelsa,Southern Ijaw,Terrorism,2007-06-12,"Vanguard
+							(12 )
+						, Daily Champion
+							(9 )
+						, The Punch
+							(8 )
+						, The Guardian
+							(9 )
+						, Independent
+							(15 )
+						, This Day
+							(11 )
+						","Southern Ijaw, Bayelsa, Nigeria",5.876791333931289,4.71321975
+lagos,Ikeja,Terrorism,2007-06-10,"Daily Champion
+							(1 )
+						, The Nation
+							(1 )
+						","Ikeja, Lagos, Nigeria",3.340787,6.5960605
+bayelsa,Southern Ijaw,Terrorism,2007-06-17,"This Day
+							(12 )
+						, The Punch
+							(12 )
+						","Southern Ijaw, Bayelsa, Nigeria",5.876791333931289,4.71321975
+oyo,"Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West",Violence,2007-06-12,"The Punch
+							(1 )
+						","Ibadan North East, Ibadan North, Ibadan North West, Ibadan South East, Ibadan South West oyo, nigeria",0.0,0.0
+benue,Katsina-Ala,Robbery,2007-06-12,"New Nigerian
+							(1 )
+						","Katsina Ala, Buruku, Benue, Nigeria",9.283333,7.166667
+osun,Osogbo,Terrorism,2007-06-14,"Daily Champion
+							(6 )
+						, Vanguard
+							(1 )
+						, The Nation
+							(1 )
+						","Osogbo, Osun, 230261, Nigeria",4.575044734945106,7.75832225
+nasarawa,Doma,Terrorism,2007-05-30,"Independent
+							(2 )
+						","Doma, Nasarawa, Nigeria",8.33729347889155,8.15993355
+lagos,Ojo,Terrorism,2007-06-12,"The Punch
+							(3 )
+						, The Guardian
+							(3 )
+						","Ojo, Lagos, Nigeria",3.165706414364106,6.46249745
+lagos,"Lagos Island, Lagos Mainland",Robbery,2007-06-14,"The Punch
+							(2 )
+						, Vanguard
+							(3 )
+						","Lagos Lagoon, Lagos Island, Lagos, Nigeria",3.6486140200620962,6.5381736
+osun,Ola-Oluwa,Terrorism,2007-06-17,"The Nation
+							(2 )
+						, The Guardian
+							(2 )
+						","Ola Oluwa, Osun, Nigeria",4.199432168519866,7.7457420500000005
+rivers,Port-Harcourt,Terrorism,2007-06-17,"The Nation
+							(2 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+anambra,Anaocha,Robbery,2007-05-30,"The Punch
+							(1 )
+						","Anaocha, Anambra, Nigeria",7.021171370313768,6.0922999
+lagos,Oshodi-Isolo,Robbery,2007-06-16,"PM News
+							(4 )
+						","Oshodi/Isolo, Lagos, 100263, Nigeria",3.3124146026491035,6.5400100000000005
+lagos,Badagry,Violence,2007-06-22,"Vanguard
+							(2 )
+						","Badagry, Lagos, Nigeria",2.9060324070376966,6.43932225
+kogi,Ajaokuta,Terrorism,2007-06-17,"New Nigerian
+							(1 )
+						","Ajaokuta, Kogi, Nigeria",6.6936392,7.4631568
+delta,Warri South,Robbery,2007-06-23,"Vanguard
+							(4 )
+						, The Punch
+							(3 )
+						","Warri South, Delta, Nigeria",5.6514533,5.626158
+oyo,Ogbomosho South,,2007-06-22,"human rights organisation, humanitarian organisations
+							(1 )
+						, New Nigerian
+							(1 )
+						, This Day
+							(1 )
+						","Ogbomosho South, Oyo, Nigeria",4.237004228192205,8.074718
+benue,Konshisha,Violence,2007-06-25,"The Nation
+							(3 )
+						","Konshisha, Benue, Nigeria",8.618047290964688,7.1204698
+kebbi,Bagudo,Terrorism,2007-06-25,"Independent
+							(1 )
+						","Bagudo, Kebbi, Nigeria",4.2277586,11.4040393
+rivers,Akuku Toru,Terrorism,2007-07-04,"The Guardian
+							(1 )
+						","Akuku Toru, Rivers, Nigeria",6.678670665142749,4.53362895
+benue,"Vandeikya, Obanliku",Terrorism,2007-06-21,"The Punch
+							(60 )
+						, Daily Champion
+							(50 )
+						","Vandeikya, Obanliku benue, nigeria",0.0,0.0
+rivers,Port-Harcourt,Terrorism,2007-07-03,"The Punch
+							(2 )
+						, This Day
+							(3 )
+						","Port-Harcourt, Rivers, Nigeria",7.0188527,4.7676576
+edo,Oredo,Violence,2007-07-04,"Daily Champion
+							(2 )
+						, Vanguard
+							(1 )
+						","Oredo, Edo, Nigeria",5.561790183209288,6.229763050000001
+lagos,Agege,Robbery,2007-06-23,"The Guardian
+							(1 )
+						","Agege, Lagos, Nigeria",3.311209267702652,6.6252564
+kaduna,"Kaduna North, Kaduna South",Terrorism,2007-06-25,"Daily Trust
+							(1 )
+						","KARGI SECONDARY SCHOOL TUDUN WADA KADUNA, Dutsin-Ma Road, Sabon Gari North, Kaduna South, Kaduna, 800211, Nigeria",7.401899765286834,10.50833055

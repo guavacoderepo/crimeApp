@@ -1,17 +1,17 @@
 crimesList = [
     "bandit", "terrorist", "terrorism", "boko haram", "herdsmen", "explosion", "attack", "separatist", "agitation", "ipob", "farmer", "fulani", "gunmen", "ISWAP", "cattle rustlers", "oil war", "militants", "troops", "pipeline explosion", "ESN", "bomb", "pirates", "sea pirates", "customs", "MASSOB", "Amotekun", "shoot", "gun" "duel",
-              "cybercrime", "atm" "fraud", "internet", "forgery", "scam", "wire fraud", "financial", "yahoo boy", "impersonation", "laundering", "Money", "efcc", "forgery",
-              "highway robbery", "robbery", "rob", "shot", "robber", "killed", "kills","robbers","bullets", "attacked", "armed", "theft", "burglary", "steal", "thieves", "electoral violence", "explosive", "religious", "assault", "ballot box", "cult",
-              "communal clash", "brutality", "war", "ethno-religious", "child labor", "hoodlums", "cultist", "vigilante", "kill", "decomposed corpse", "police", "victim", "security agency",
-              "security operative", "soldiers", "gang", "war", "domestic violence", "found dead", "assailants", "crisis", "mob", "raze", "ablaze", "political violence", "task force", "NSCDC", "mosque",
-              "church", "Oro", "Ifa", "traditional", "worshipper", "convoy", "students", "ritual", "NURTW", "murder", "SARS", "tussle", "lynch", "guards", "jungle" "justice", "Shiites", "pipeline", "vandal",
-              "masquerade", "human skull", "body parts", "checkpoint", "protest", "assassination", "burn", "execute", "human trafficking", "slavery", "smuggling", "drug", "drug trafficking", "ndlea", "kidnapping",
-              "kidnap", "abduction", "abduct", "rape", "raping", "baby factories", "sex", "lovers", "minor", "stab", "trial", "crime", "Bribery", "Corruption", "Conspiracy", "Slander", "malpractice", "killing", "uber", "death", "police"
+    "cybercrime", "atm" "fraud", "internet", "forgery", "scam", "wire fraud", "financial", "yahoo boy", "impersonation", "laundering", "Money", "efcc", "forgery",
+    "highway robbery", "robbery", "rob", "shot", "robber", "killed", "kills", "robbers", "bullets", "attacked", "armed", "theft", "burglary", "steal", "thieves", "electoral violence", "explosive", "religious", "assault", "ballot box", "cult", "clash",
+    "communal clash", "brutality", "war", "ethno-religious", "child labor", "hoodlums", "cultist", "vigilante", "kill", "decomposed corpse", "police", "victim", "security agency",
+    "security operative", "soldiers", "gang", "war", "domestic violence", "fight", "pdp", "violence", "found dead", "assailants", "crisis", "mob", "raze", "ablaze", "political violence", "task force", "NSCDC", "mosque",
+    "church", "Oro", "Ifa", "traditional", "worshipper", "convoy", "students", "ritual", "NURTW", "murder", "SARS", "tussle", "lynch", "guards", "jungle" "justice", "Shiites", "pipeline", "vandal",
+    "masquerade", "human skull", "body parts", "checkpoint", "protest", "assassination", "burn", "execute", "human trafficking", "slavery", "smuggling", "drug", "drug trafficking", "ndlea", "kidnapping",
+    "kidnap", "abduction", "abduct", "rape", "raping", "baby factories", "sex", "lovers", "minor", "stab", "trial", "crime", "Bribery", "Corruption", "Conspiracy", "Slander", "malpractice", "killing", "uber", "death", "police"
 ]
 
 states = {
 
-    "Abuja": [
+    "abuja": [
         "Kwali",
         "Kuje",
         "Gwagwalada",
@@ -19,7 +19,7 @@ states = {
         "Abaji",
         "Abuja"
     ],
-    "Abia": [
+    "abia": [
         "Aba North",
         "Aba South",
         "Arochukwu",
@@ -44,7 +44,7 @@ states = {
         "Abia"
     ],
 
-    "Adamawa": [
+    "adamawa": [
         "Demsa",
         "Fufore",
         "Ganye",
@@ -70,7 +70,7 @@ states = {
         "Adamawa"
     ],
 
-    "Akwa Ibom": [
+    "akwa Ibom": [
         "Abak",
         "Eastern Obolo",
         "Eket",
@@ -107,7 +107,7 @@ states = {
         "Akwa Ibom"
     ],
 
-    "Anambra": [
+    "anambra": [
         "Aguata",
         "Anambra East",
         "Anambra West",
@@ -132,7 +132,7 @@ states = {
         "Anambra"
     ],
 
-    "Bauchi": [
+    "bauchi": [
         "Alkaleri",
         "Bogoro",
         "Damban",
@@ -156,7 +156,7 @@ states = {
         "Bauchi"
     ],
 
-    "Bayelsa": [
+    "bayelsa": [
         "Brass",
         "Ekeremor",
         "Kolokuma Opokuma",
@@ -169,7 +169,7 @@ states = {
         "Bayelsa"
     ],
 
-    "Benue": [
+    "benue": [
         "Ado",
         "Agatu",
         "Apa",
@@ -196,7 +196,7 @@ states = {
         "Benue"
     ],
 
-    "Borno": [
+    "borno": [
         "Abadam",
         "Askira-Uba",
         "Askira Uba",
@@ -229,7 +229,7 @@ states = {
         "Borno"
     ],
 
-    "Cross River": [
+    "cross river": [
         "Abi",
         "Akamkpa",
         "Akpabuyo",
@@ -252,7 +252,7 @@ states = {
         "Cross River"
     ],
 
-    "Delta": [
+    "delta": [
         "Aniocha North",
         "Aniocha South",
         "Aniocha",
@@ -282,7 +282,7 @@ states = {
         "Delta"
     ],
 
-    "Ebonyi": [
+    "ebonyi": [
         "Abakaliki",
         "Afikpo North",
         "Afikpo South",
@@ -298,7 +298,7 @@ states = {
         "Ebonyi"
     ],
 
-    "Edo": [
+    "edo": [
         "Akoko Edo",
         "Egor",
         "Esan Central",
@@ -322,7 +322,7 @@ states = {
         "Edo"
     ],
 
-    "Ekiti": [
+    "ekiti": [
         "Ado-Ekiti",
         "Ado Ekiti",
         "Efon",
@@ -345,7 +345,7 @@ states = {
         "Ekiti"
     ],
 
-    "Enugu": [
+    "enugu": [
         "Aninri",
         "Awgu",
         "Enugu East",
@@ -368,7 +368,7 @@ states = {
         "Enugu"
     ],
 
-    "Gombe": [
+    "gombe": [
         "Akko",
         "Balanga",
         "Billiri",
@@ -382,7 +382,7 @@ states = {
         "Gombe"
     ],
 
-    "Imo": [
+    "imo": [
         "Aboh-Mbaise",
         "Ahiazu-Mbaise",
         "Ahiazu Mbaise",
@@ -421,7 +421,7 @@ states = {
         "Imo"
     ],
 
-    "Jigawa": [
+    "jigawa": [
         "Auyo",
         "Babura",
         "Biriniwa",
@@ -452,7 +452,7 @@ states = {
         "Jigawa"
     ],
 
-    "Kaduna": [
+    "kaduna": [
         "Birnin-Gwari",
         "Birnin Gwari",
         "Chikun",
@@ -483,7 +483,7 @@ states = {
         "Kaduna"
     ],
 
-    "Kano": [
+    "kano": [
         "Ajingi",
         "Albasu",
         "Bagwai",
@@ -536,7 +536,7 @@ states = {
         "Kano"
     ],
 
-    "Katsina": [
+    "katsina": [
         "Bakori",
         "Batagarawa",
         "Batsari",
@@ -576,7 +576,7 @@ states = {
         "Katsina"
     ],
 
-    "Kebbi": [
+    "kebbi": [
         "Aleiro",
         "Arewa-Dandi",
         "Arewa Dandi",
@@ -605,7 +605,7 @@ states = {
         "Kebbi"
     ],
 
-    "Kogi": [
+    "kogi": [
         "Adavi",
         "Ajaokuta",
         "Ankpa",
@@ -631,7 +631,7 @@ states = {
         "Kogi"
     ],
 
-    "Kwara": [
+    "kwara": [
         "Asa",
         "Baruten",
         "Edu",
@@ -651,7 +651,7 @@ states = {
         "Kwara"
     ],
 
-    "Lagos": [
+    "lagos": [
         "Agege",
         "Ajeromi-Ifelodun",
         "Ajeromi Ifelodun",
@@ -682,7 +682,7 @@ states = {
         "Lagos"
     ],
 
-    "Nassarawa": [
+    "nasarawa": [
         "Akwanga",
         "Awe",
         "Doma",
@@ -697,10 +697,10 @@ states = {
         "Obi",
         "Wamba",
         "Toto",
-        "Nassarawa"
+        "Nasarawa"
     ],
 
-    "Ogun": [
+    "ogun": [
         "Abeokuta North",
         "Abeokuta South",
         "Abeokuta",
@@ -729,7 +729,7 @@ states = {
         "Ogun"
     ],
 
-    "Ondo": [
+    "ondo": [
         "Akoko North-East",
         "Akoko North-West",
         "Akoko South-West",
@@ -754,7 +754,7 @@ states = {
         "Ondo"
     ],
 
-    "Osun": [
+    "osun": [
         "Atakumosa West",
         "Atakumosa East",
         "Ayedaade",
@@ -790,7 +790,7 @@ states = {
         "Osun"
     ],
 
-    "Oyo": [
+    "oyo": [
         "Afijio",
         "Akinyele",
         "Atiba",
@@ -834,7 +834,7 @@ states = {
         "Oyo"
     ],
 
-    "Plateau": [
+    "plateau": [
         "Barkin-Ladi",
         "Barkin Ladi",
         "Bassa",
@@ -857,7 +857,7 @@ states = {
         "Plateau"
     ],
 
-    "Rivers": [
+    "rivers": [
         "Abua Odual",
         "Ahoada East",
         "Ahoada West",
@@ -882,12 +882,13 @@ states = {
         "Opobo Nkoro",
         "Oyigbo",
         "Port-Harcourt",
+        "port harcourt",
         "Tai",
         "Ogba"
         "Rivers"
     ],
 
-    "Sokoto": [
+    "sokoto": [
         "Binji",
         "Bodinga",
         "Dange",
@@ -913,7 +914,7 @@ states = {
         "Sokoto"
     ],
 
-    "Taraba": [
+    "taraba": [
         "Ardo-Kola",
         "Bali",
         "Donga",
@@ -954,7 +955,7 @@ states = {
         "Yobe"
     ],
 
-    "Zamfara": [
+    "zamfara": [
         "Anka",
         "Bakura",
         "Birnin Magaji/Kiyaw",
@@ -975,7 +976,7 @@ states = {
         "Zamfara"
     ],
 
-    "Niger": [
+    "niger": [
         "Agaie",
         "Agwara",
         "Bida",

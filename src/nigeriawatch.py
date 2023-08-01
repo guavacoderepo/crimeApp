@@ -6,6 +6,7 @@ from datetime import datetime
 
 
 states = [state for state in var.states.keys()]
+
 crime = var.crimesList
 
 state_set = set(states)
@@ -101,8 +102,14 @@ url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
 # scrap all pages
 def nigeriawatch_scrape_all_document():
-    page = 1
+    page = 1473
+    all_lgas = []
 
+    # 1956
+
+    # print(all_lgas)
+
+    # start iteration
     while True:
 
         print("--------------- {} started -------------".format(page))
@@ -127,25 +134,47 @@ def nigeriawatch_scrape_all_document():
 
         # check if news is valid
         if len(headlines) > 3:
-            # check the state
-            State = headlines[1].split(
-                " ")[-1].replace("(", "").replace(")", "")
 
+            # check the state
+            title = headlines[1].lower().replace(
+                "(", "").replace(")", "").replace(",", "")
+
+            print(title)
+
+            # check if state exit
+            State = [state for state in states if state.lower() in title]
+
+            # if state is empty look out for lga in title
+            if not State:
+                # get all lgas for filter
+                for k, v in var.states.items():
+                    lgaValue = [lga for lga in v if lga.lower() in title]
+                    if lgaValue:
+                        # set state to index 0 of state list
+                        State = [k]
+                        break
+
+            # check if state found
+            if not State:
+                print("no state found.....")
+                page += 1
+                continue
+
+            # extract lga, crime, date and source
             Lga = headlines[-1]
 
-            Crime = headlines[1].lower().replace(",", "").split(" ")[:-1]
-
             crime = [crime for crime in var.crimesList if crime.lower()
-                     in Crime]
+                     in title]
 
-            if len(crime) == 0:
+            # check if crime exit
+            if not crime:
                 page += 1
-                print("new scrap.........")
+                print("no crime found.........")
                 continue
 
             date = headlines[3]
 
-            Source = headlines[-2].strip()
+            Source = headlines[-2]
 
             place = "{}, {}".format(headlines[6], Lga)
 
@@ -156,7 +185,7 @@ def nigeriawatch_scrape_all_document():
             newdate = dateformat.strptime(Date, '%d-%m-%Y')
 
             # send date to database
-            requetfunc(newdate, State, Lga, Crime, Source)
+            # requetfunc(newdate, State[0], Lga, Crime, Source)
 
             pass
         else:
