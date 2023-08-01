@@ -107,6 +107,10 @@ def nigeriawatch_scrape_new_document():
         page += 1
 
 
+
+
+
+
 # scrap all pages
 def nigeriawatch_scrape_all_document():
     page = 1473
