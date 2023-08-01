@@ -133,7 +133,15 @@ def nigeriawatch_scrape_all_document():
 
             Lga = headlines[-1]
 
-            Crime = headlines[1].split(" ")[:-1]
+            Crime = headlines[1].lower().replace(",", "").split(" ")[:-1]
+
+            crime = [crime for crime in var.crimesList if crime.lower()
+                     in Crime]
+
+            if len(crime) == 0:
+                page += 1
+                print("new scrap.........")
+                continue
 
             date = headlines[3]
 

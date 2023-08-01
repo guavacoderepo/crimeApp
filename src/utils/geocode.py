@@ -6,12 +6,17 @@ def geoCoder(loc="Adamawa Adamawa"):
 
     location = geolocator.geocode(loc)
 
-    lat = location.latitude
-    lng = location.longitude
-    addr = location
+    try:
+        lat = location.latitude
+        lng = location.longitude
+        addr = location
 
-    if location != None:
-        return {"formattedAddress": addr, "lat": lat, "lng": lng}
-    else:
+        if location != None:
+            return {"formattedAddress": addr, "lat": lat, "lng": lng}
+        else:
+            return {"formattedAddress": loc, "lat": "", "lng": ""}
+    except:
         return {"formattedAddress": loc, "lat": "", "lng": ""}
+
+
 # geoCoder()
