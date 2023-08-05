@@ -15,7 +15,7 @@ status = True
 
 
 # scrap one page
-def sahara_scrape_one_page():
+def sahara_scrape_all_documents():
     page = 1
     date = datetime.now()
     print(date)
@@ -37,8 +37,8 @@ def sahara_scrape_one_page():
         newsData = saharareporters_request_soup.find_all(
             'h2', class_="title is-3")
 
-        dates = saharareporters_request_soup.find_all(
-            'div', class_="card-content-bottom")
+        # dates = saharareporters_request_soup.find_all(
+        #     'div', class_="card-content-bottom")
 
         # check if news found
         if len(newsData) == 0:
@@ -49,27 +49,31 @@ def sahara_scrape_one_page():
         for state in states:
             headlins = [headline for headline in newsData]
 
-            for id, healine in enumerate(headlins):
+            for headline in headlins:
 
                 State = ""
                 Lga = ""
                 Crime = ""
                 Date = ""
 
-                headlines = str(healine.text.lower()).replace(
+                headlineTxt = str(headline.text.lower()).replace(
                     "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
 
+                # print(len(headlines))
+
                 # print(headlines)
-                if state.lower() in headlines:
+                if state.lower() in headlineTxt:
 
                     crime = [crime for crime in var.crimesList if crime.lower()
-                             in healine.text.lower()]
+                             in headline.text.lower()]
 
                     if crime:
                         content = ""
 
+                        # print(headline)
+
                         try:
-                            link = healine.find_all("a")
+                            link = headline.find_all("a")
                         except Exception as e:
                             print(e)
 
@@ -81,13 +85,16 @@ def sahara_scrape_one_page():
                         text = [req.text for req in soup_req.find_all(
                             "div", property="schema:text")]
 
+                        dates = soup_req.find_all(
+                            'div', class_="column is-3 group-left")
+
                         content = content.join(e.lower() for e in text)
 
                         for lga in var.states[state]:
 
                             if lga.lower() in content:
 
-                                Date = str(dates[id].find_all("div")[
+                                Date = str(dates[0].find_all("div")[
                                     0].text).replace(",", "").strip().replace(" ", "-")
 
                                 Lga = lga
@@ -99,7 +106,9 @@ def sahara_scrape_one_page():
                                 newdate = datetime.strptime(Date, '%B-%d-%Y')
 
                                 # send date to database
-                                print(newdate)
+                                # print(newdate)
+                                print(content)
+                                # print(text)
                                 # requetfunc(newdate, State, Lga, Crime, Source)
 
                                 break
@@ -108,12 +117,8 @@ def sahara_scrape_one_page():
         page += 1
 
 
-sahara_scrape_one_page()
-
 # scrap all documents
-
-
-def sahara_scrape_all_documents():
+def sahara_scrape_one_page():
     page = 1
 
     while True:
