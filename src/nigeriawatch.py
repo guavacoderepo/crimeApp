@@ -4,16 +4,13 @@ import utils.variables as var
 from utils.requestfunc import requetfunc
 from datetime import datetime
 
-
 states = [state for state in var.states.keys()]
 
 crime = var.crimesList
-
 state_set = set(states)
 crime_set = set(crime)
 
 dateformat = datetime
-
 
 url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
@@ -107,13 +104,9 @@ def nigeriawatch_scrape_new_document():
         page += 1
 
 
-
-
-
-
 # scrap all pages
 def nigeriawatch_scrape_all_document():
-    page = 1473
+    page = 0
 
     # start iteration
     while True:
@@ -123,6 +116,14 @@ def nigeriawatch_scrape_all_document():
         # check if news exceed a value
         # if len(newsData) == 0:
         #     break
+
+        # add and get last index
+        f = open("index.txt", "r")
+
+        page = int(f.read())
+
+        print(page)
+        # page index
 
         nigeriawatchReq = requests.get(
             "{}{}".format(url, page), timeout=10).text
@@ -135,8 +136,6 @@ def nigeriawatch_scrape_all_document():
 
         # search for state in the headlind of each new
         headlines = [head.text for head in newsData]
-
-        # print(headlines)
 
         # check if news is valid
         if len(headlines) > 3:
@@ -191,7 +190,7 @@ def nigeriawatch_scrape_all_document():
             newdate = dateformat.strptime(Date, '%d-%m-%Y')
 
             # send date to database
-            requetfunc(newdate, State[0], Lga, crime, Source)
+            # requetfunc(newdate, State[0], Lga, crime, Source)
 
             pass
         else:
@@ -199,6 +198,10 @@ def nigeriawatch_scrape_all_document():
 
         print("--------------- {} ended -------------".format(page))
         page += 1
+
+        f = open("index.txt", "w")
+        f.write(str(page))
+        f.close()
 
 
 nigeriawatch_scrape_all_document()
