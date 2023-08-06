@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import utils.variables as var
-from utils.requestfunc import requetfunc
+import src.utils.variables as var
+from src.utils.requestfunc import requetfunc
 from datetime import datetime
 
 states = [state for state in var.states.keys()]
@@ -11,7 +11,7 @@ state_set = set(states)
 crime_set = set(crime)
 
 # set count to break for no news
-count = 0
+
 
 url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
@@ -108,6 +108,7 @@ def nigeriawatch_scrape_new_document():
 # scrap all pages
 def nigeriawatch_scrape_all_document():
     page = 1
+    count = 0
 
     # start iteration
     while True:
@@ -215,4 +216,4 @@ def nigeriawatch_scrape_all_document():
         f.close()
 
 
-nigeriawatch_scrape_all_document()
+# nigeriawatch_scrape_all_document()

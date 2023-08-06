@@ -1,8 +1,8 @@
 # add scr. on all utils
 
-from modules.mongo import insert_item
-from utils.geocode import geoCoder
-from utils.categories import categorize
+from src.modules.mongo import insert_item
+from src.utils.geocode import geoCoder
+from src.utils.categories import categorize
 from datetime import datetime
 import pandas as pd
 
@@ -47,12 +47,12 @@ def requetfunc(newdate, State, Lga, Crime, Source):
         print("Data appended successfully.")
 
         # insert into mongo
-        # insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source,
-        #              "geoCode": {
-        #                  "formattedAddress": str(loc["formattedAddress"]),
-        #                  "lng": loc["lng"],
-        #                  "lat": loc["lat"]
-        #              }})
+        insert_item({"state": State, "lga": Lga, "crime": category, "date": newdate, "source": Source,
+                     "geoCode": {
+                         "formattedAddress": str(loc["formattedAddress"]),
+                         "lng": loc["lng"],
+                         "lat": loc["lat"]
+                     }})
 
     except Exception as e:
         print(e)
