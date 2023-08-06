@@ -10,7 +10,8 @@ crime = var.crimesList
 state_set = set(states)
 crime_set = set(crime)
 
-dateformat = datetime
+# set count to break for no news
+count = 0
 
 url = "https://www.nigeriawatch.org/index.php?urlaction=evtView&id_evt="
 
@@ -91,7 +92,7 @@ def nigeriawatch_scrape_new_document():
 
             Date = "{}-{}-{}".format(d[2], d[1], d[0])
 
-            newdate = dateformat.strptime(Date, '%d-%m-%Y')
+            newdate = datetime.strptime(Date, '%d-%m-%Y')
 
             # send date to database
             requetfunc(newdate, State[0], Lga, crime, Source)
@@ -106,23 +107,23 @@ def nigeriawatch_scrape_new_document():
 
 # scrap all pages
 def nigeriawatch_scrape_all_document():
-    page = 0
+    page = 1
 
     # start iteration
     while True:
 
         print("--------------- {} started -------------".format(page))
 
-        # check if news exceed a value
-        # if len(newsData) == 0:
-        #     break
+        # check if "no news" exceed a value "20"
+        if count > 20:
+            break
 
         # add and get last index
         f = open("index.txt", "r")
 
         page = int(f.read())
 
-        print(page)
+        # print(page)
         # page index
 
         nigeriawatchReq = requests.get(
@@ -139,6 +140,8 @@ def nigeriawatch_scrape_all_document():
 
         # check if news is valid
         if len(headlines) > 3:
+            # reset count to zero when news found
+            count = 0
 
             # check the state
             title = headlines[1].lower().replace(
@@ -163,6 +166,9 @@ def nigeriawatch_scrape_all_document():
             if not State:
                 print("no state found.....")
                 page += 1
+                f = open("index.txt", "w")
+                f.write(str(page))
+                f.close()
                 continue
 
             # extract lga, crime, date and source
@@ -174,6 +180,9 @@ def nigeriawatch_scrape_all_document():
             # check if crime exit
             if not crime:
                 page += 1
+                f = open("index.txt", "w")
+                f.write(str(page))
+                f.close()
                 print("no crime found.........")
                 continue
 
@@ -187,13 +196,15 @@ def nigeriawatch_scrape_all_document():
 
             Date = "{}-{}-{}".format(d[2], d[1], d[0])
 
-            newdate = dateformat.strptime(Date, '%d-%m-%Y')
+            newdate = datetime.strptime(Date, '%d-%m-%Y')
 
             # send date to database
-            # requetfunc(newdate, State[0], Lga, crime, Source)
+            requetfunc(newdate, State[0], Lga, crime, Source)
 
             pass
         else:
+            # add count if no news data found
+            count += 1
             print("no news data")
 
         print("--------------- {} ended -------------".format(page))

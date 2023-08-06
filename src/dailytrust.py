@@ -39,7 +39,6 @@ def dailytrust_scrape_one_page():
 
     headlins = [head for head in newsData]
 
-    print(len(headlins))
     for state in states:
 
         for id, healine in enumerate(headlins):
@@ -74,8 +73,6 @@ def dailytrust_scrape_one_page():
                     soup_req = BeautifulSoup(news_req, "lxml")
 
                     date = soup_req.find_all("div", class_="post-time")[0].text
-
-                    print(Date)
 
                     text = [req.text for req in soup_req.find_all("p")]
                     
@@ -168,8 +165,6 @@ def dailytrust_scrape_all_docx():
                         soup_req = BeautifulSoup(news_req, "lxml")
 
                         date = soup_req.find_all("div", class_="post-time")[0].text
-
-                        print(Date)
 
                         text = [req.text for req in soup_req.find_all("p")]
                         

@@ -37,9 +37,6 @@ def sahara_scrape_all_documents():
         newsData = saharareporters_request_soup.find_all(
             'h2', class_="title is-3")
 
-        # dates = saharareporters_request_soup.find_all(
-        #     'div', class_="card-content-bottom")
-
         # check if news found
         if len(newsData) == 0:
             break
@@ -109,7 +106,7 @@ def sahara_scrape_all_documents():
                                 # print(newdate)
                                 print(content)
                                 # print(text)
-                                # requetfunc(newdate, State, Lga, Crime, Source)
+                                requetfunc(newdate, State, Lga, Crime, Source)
 
                                 break
 
