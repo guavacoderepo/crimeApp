@@ -26,5 +26,5 @@ def create_app():
 app = create_app()
 
 if __name__ == "__main__":
-    runApp = app()
-    runApp.run()
+    runApp = app
+    runApp.run(debug=True)

@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import src.utils.variables as var
 from src.utils.requestfunc import requetfunc
+from src.utils.checkpoint import updatecheckpoint, opencheckpoint
 from datetime import datetime
 
 states = [state for state in var.states.keys()]
@@ -9,6 +10,8 @@ states = [state for state in var.states.keys()]
 crime = var.crimesList
 state_set = set(states)
 crime_set = set(crime)
+ 
+cp = "checkpoints/ninjawatch_cp.txt"
 
 # set count to break for no news
 
@@ -120,8 +123,7 @@ def nigeriawatch_scrape_all_document():
             break
 
         # add and get last index
-        f = open("index.txt", "r")
-
+        f = opencheckpoint(cp)
         page = int(f.read())
 
         # print(page)
@@ -148,7 +150,7 @@ def nigeriawatch_scrape_all_document():
             title = headlines[1].lower().replace(
                 "(", "").replace(")", "").replace(",", "")
 
-            print(title)
+            # print(title)
 
             # check if state exit
             State = [state for state in states if state.lower() in title]
@@ -167,9 +169,9 @@ def nigeriawatch_scrape_all_document():
             if not State:
                 print("no state found.....")
                 page += 1
-                f = open("index.txt", "w")
-                f.write(str(page))
-                f.close()
+
+                # update news checkpoint
+                updatecheckpoint(cp, page)
                 continue
 
             # extract lga, crime, date and source
@@ -181,9 +183,9 @@ def nigeriawatch_scrape_all_document():
             # check if crime exit
             if not crime:
                 page += 1
-                f = open("index.txt", "w")
-                f.write(str(page))
-                f.close()
+                
+                # update news checkpoint
+                updatecheckpoint(cp, page)
                 print("no crime found.........")
                 continue
 
@@ -211,9 +213,8 @@ def nigeriawatch_scrape_all_document():
         print("--------------- {} ended -------------".format(page))
         page += 1
 
-        f = open("index.txt", "w")
-        f.write(str(page))
-        f.close()
+        # update news checkpoint
+        updatecheckpoint(cp, page)
 
 
 # nigeriawatch_scrape_all_document()

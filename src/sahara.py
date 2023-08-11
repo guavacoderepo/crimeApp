@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import src.utils.variables as var
 from datetime import datetime
 from src.utils.requestfunc import requetfunc
+from src.utils.checkpoint import updatecheckpoint, opencheckpoint
 
 
 states = [state for state in var.states.keys()]
@@ -13,12 +14,13 @@ crime_set = set(crime)
 
 status = True
 
+cp = "checkpoints/sahara_cp.txt"
 
 # scrap one page
 def sahara_scrape_all_documents():
     page = 1
     date = datetime.now()
-    print(date)
+    # print(date)
 
     while True:
 
@@ -40,6 +42,10 @@ def sahara_scrape_all_documents():
         # check if news found
         if len(newsData) == 0:
             break
+
+        # add and get last index
+        f = opencheckpoint(cp)
+        page = int(f.read())
 
         # search for state in the headlind of each new
 
@@ -103,15 +109,14 @@ def sahara_scrape_all_documents():
                                 newdate = datetime.strptime(Date, '%B-%d-%Y')
 
                                 # send date to database
-                                # print(newdate)
-                                print(content)
-                                # print(text)
+
                                 requetfunc(newdate, State, Lga, Crime, Source)
 
                                 break
 
         print("--------------- {} ended -------------".format(page))
         page += 1
+        updatecheckpoint(cp, page)
 
 
 # scrap all documents

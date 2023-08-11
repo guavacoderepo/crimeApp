@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import src.utils.variables as var
 from src.utils.requestfunc import requetfunc
 from datetime import datetime
+from src.utils.checkpoint import updatecheckpoint, opencheckpoint
 
 
 states = [state for state in var.states.keys()]
@@ -14,16 +15,17 @@ crime_set = set(crime)
 dateformat = datetime
 
 
+cp = "checkpoints/guardian_cp.txt"
 
 # scrap first page
 def guardian_scrape_one_page():
     page = 1
 
-
     print("--------------- {} started -------------".format(page))
 
-    guardian_request = requests.get("https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
-    
+    guardian_request = requests.get(
+        "https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
+
     guardian_request_soup = BeautifulSoup(
         guardian_request, "lxml")
 
@@ -32,7 +34,6 @@ def guardian_scrape_one_page():
 
     # search for state in the headlind of each new
     headlins = [head.a for head in newsData]
-
 
     # print(len(headlins))
     for state in states:
@@ -46,12 +47,12 @@ def guardian_scrape_one_page():
 
             headlines = str(healine.text.lower()).replace(
                 "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
-            
+
             if state.lower() in headlines:
-    
+
                 crime = [crime for crime in var.crimesList if crime.lower()
-                            in healine.text.lower()]
-                    
+                         in healine.text.lower()]
+
                 if crime:
                     content = ""
 
@@ -62,13 +63,13 @@ def guardian_scrape_one_page():
 
                     news_req = requests.get(
                         str(link).strip(), timeout=10).text
-                    
+
                     soup_req = BeautifulSoup(news_req, "lxml")
 
                     date = soup_req.find_all("div", class_="date")[0].text
 
                     text = [req.text for req in soup_req.find_all("p")]
-                    
+
                     content = content.join(e.lower() for e in text)
 
                     for lga in var.states[state]:
@@ -77,7 +78,7 @@ def guardian_scrape_one_page():
 
                             d = str(date).strip().split(" ")
 
-                            Date = "{}-{}-{}".format(d[0],d[1],d[2])
+                            Date = "{}-{}-{}".format(d[0], d[1], d[2])
 
                             Lga = lga
                             State = state
@@ -91,14 +92,12 @@ def guardian_scrape_one_page():
 
                             break
 
-
     print("--------------- {} ended -------------".format(page))
 
 
 
 
-
-# scrap all pages 
+# scrap all pages
 def guardian_scrape_all_document():
     page = 1
 
@@ -106,22 +105,26 @@ def guardian_scrape_all_document():
 
         print("--------------- {} started -------------".format(page))
 
-        guardian_request = requests.get("https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
-        
+        guardian_request = requests.get(
+            "https://guardian.ng/?s=nigeria+crime&page={}".format(page+1), timeout=10).text
+
         guardian_request_soup = BeautifulSoup(
             guardian_request, "lxml")
 
         newsData = guardian_request_soup.find_all(
             'div', class_="headline")
-        
+
         # check if news found
         if len(newsData) == 0:
             break
-            
+
+        # add and get last index
+        f = opencheckpoint(cp)
+        page = int(f.read())
+
         # search for state in the headlind of each new
         headlins = [head.a for head in newsData]
 
-        
         # print(len(headlins))
         for state in states:
 
@@ -134,13 +137,12 @@ def guardian_scrape_all_document():
 
                 headlines = str(healine.text.lower()).replace(
                     "nigerian", " ").replace("nigerias", " ").replace("nigeria", " ")
-                
-                
+
                 if state.lower() in headlines:
-       
+
                     crime = [crime for crime in var.crimesList if crime.lower()
                              in healine.text.lower()]
-                    
+
                     if crime:
                         content = ""
 
@@ -151,13 +153,13 @@ def guardian_scrape_all_document():
 
                         news_req = requests.get(
                             str(link).strip(), timeout=10).text
-                        
+
                         soup_req = BeautifulSoup(news_req, "lxml")
 
                         date = soup_req.find_all("div", class_="date")[0].text
 
                         text = [req.text for req in soup_req.find_all("p")]
-                        
+
                         content = content.join(e.lower() for e in text)
 
                         for lga in var.states[state]:
@@ -166,7 +168,7 @@ def guardian_scrape_all_document():
 
                                 d = str(date).strip().split(" ")
 
-                                Date = "{}-{}-{}".format(d[0],d[1],d[2])
+                                Date = "{}-{}-{}".format(d[0], d[1], d[2])
 
                                 Lga = lga
                                 State = state
@@ -177,10 +179,11 @@ def guardian_scrape_all_document():
 
                                 # send date to database
                                 requetfunc(newdate, State, Lga, Crime, Source)
-                                
+
                                 break
-
-
 
         print("--------------- {} ended -------------".format(page))
         page += 1
+
+        # update news checkpoint
+        updatecheckpoint(cp, page)
