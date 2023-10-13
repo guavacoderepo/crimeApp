@@ -20,6 +20,11 @@ def create_app():
     def scrap_one_page():
         scrape_one()
         return {"status": True, "msg": "scrapping one page"}
+    
+    @app.route('/api/v1/context/newstext')
+    def analyse_context():
+        scrape_one()
+        return {"status": True, "msg": "scrapping one page"}
 
     return app
 
