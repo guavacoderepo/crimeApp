@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 from src import scrape_all, scrape_one
+from src.utils.context import context_keywords
 
 
 def create_app():
@@ -20,13 +21,35 @@ def create_app():
     def scrap_one_page():
         scrape_one()
         return {"status": True, "msg": "scrapping one page"}
-    
-    @app.route('/api/v1/context/newstext')
+
+    @app.route('/api/v1/context/newstext', methods=["POST"])
     def analyse_context():
-        scrape_one()
-        return {"status": True, "msg": "scrapping one page"}
+        try:
+            if request.method == "POST":
+                #    get the context to analze
+                body = request.get_json()
+
+                for key, values in context_keywords.items():
+                    # loop through each text and get text
+                    for keyword in values:
+                        print(keyword)
+                        if keyword in body:
+                            print(keyword)
+
+                    # print(key)
+                    # print("data my oh data")
+
+                return {"status": True, "data": body["context"]}
+
+            else:
+
+                return {"status": False, "msg": "get not allow on this route.."}
+
+        except Exception as e:
+            return {"status": False, "msg": e}
 
     return app
+
 
 app = create_app()
 
