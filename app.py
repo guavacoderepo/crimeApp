@@ -1,4 +1,5 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
+import json
 from flask_cors import CORS
 from src import scrape_all, scrape_one
 from src.utils.context import context_keywords
@@ -28,27 +29,70 @@ def create_app():
             if request.method == "POST":
                 #    get the context to analze
                 body = request.get_json()
+                body = str(body["context"])
 
-                for key, values in context_keywords.items():
+                # bodydata = json.dumps()
+
+                for keys, values in context_keywords.items():
                     # loop through each text and get text
-                    for keyword in values:
-                        print(keyword)
-                        if keyword in body:
-                            print(keyword)
+                    if keys == "Politics":
+                        Politics = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Legal Matters":
+                        Legal = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Financial/Bank":
+                        Financial = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Protest":
+                        Protest = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Security":
+                        Security = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Pandemic":
+                        Pandemic = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Education":
+                        Education = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
+                    if keys == "Employment":
+                        Employment = len(
+                            [keyword for keyword in values if keyword.lower() in body.lower()])
 
-                    # print(key)
-                    # print("data my oh data")
+                sum = Education+Pandemic+Politics+Legal+Financial+Security+Employment+Protest
 
-                return {"status": True, "data": body["context"]}
+                # print(keyword.lower())
+
+                return {
+                    "status": True,
+                    "value": "%",
+                    "data": {
+                        "Education": percentage(sum=sum, value=Education),
+                        "Pandemic": percentage(sum=sum, value=Pandemic),
+                        "Politics": percentage(sum=sum, value=Politics),
+                        "Legal": percentage(sum=sum, value=Legal),
+                        "Employment": percentage(sum=sum, value=Employment),
+                        "Financial": percentage(sum=sum, value=Financial),
+                        "Security": percentage(sum=sum, value=Security),
+                        "Protest": percentage(sum=sum, value=Protest)
+                    }
+                }
 
             else:
 
                 return {"status": False, "msg": "get not allow on this route.."}
 
         except Exception as e:
-            return {"status": False, "msg": e}
+            return {"status": False, "msg": str(e)}
 
     return app
+
+
+def percentage(sum, value):
+    per = (value/sum)*100
+
+    return per
 
 
 app = create_app()

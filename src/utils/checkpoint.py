@@ -6,4 +6,3 @@ def updatecheckpoint(file, index):
 
 def opencheckpoint(file):
     return open(file, "r")
-
